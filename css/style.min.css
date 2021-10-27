@@ -1,0 +1,61 @@
+:root{--main-bg-color:#4caf50}.custom-select option:hover{background-color:#4caf50!important}section{padding:5px 0 20px 0;overflow:hidden}.section-title{text-align:center;padding-bottom:30px}.section-title h2{font-size:32px;font-weight:500;margin-bottom:20px;padding-bottom:0;font-family:Poppins,sans-serif;}.section-title p{margin-bottom:0}.services .icon-box:hover h4{color:var(--main-bg-color)!important}.services .icon-box{padding:50px 20px 5px 20px;margin-top:35px;margin-bottom:25px;text-align:center;max-height:460px;position:relative;background:#fff;box-shadow:0 2px 15px rgba(0,0,0,.1)}.services .icon{position:absolute;top:-36px;left:calc(50% - 36px);transition:.2s;border-radius:50%;border:6px solid #fff;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;width:72px;height:72px;background:var(--main-bg-color)}.services .icon i{color:#fff;font-size:24px}.services .title{font-weight:700;margin-bottom:15px;font-size:18px;text-transform:uppercase}.services .title a{color:#343a40}.services .icon-box:hover .icon{background:#fff;border:2px solid var(--main-bg-color)}.services .icon-box:hover .icon i{color:var(--main-bg-color)}.services .icon-box:hover .title a{color:var(--main-bg-color)}.services .description{line-height:24px;font-size:14px}#footer{color:#313030;font-size:14px;background:#fff}*{margin:0;padding:0;box-sizing:border-box}:root{--overlay-color:rgba(0, 0, 0, 0.7);--dialog-color:#e9ecef;--dialog-border-radius:20px;--icon-color:rgba(73, 80, 87, 0.6);--dialog-padding:20px;--drag-over-background:#e3e5e8}@media only screen and (max-width:552px){.margin-top{margin-top:20px!important}.item img{width:360px!important;height:360px!important}}@keyframes bounce{0%{transform:translateY(0)}50%{transform:translateY(-15px)}100%{transform:translateY(0)}}@keyframes shrink{0%{width:95px}50%{width:75px}100%{width:95px}}.download{background-Color:var(--main-bg-color)!important;color:#fff}.download:hover{color:var(--main-bg-color)!important;background-color:#fff!important;border:1px solid var(--main-bg-color)}.form-control:focus{border-color:var(--main-bg-color);box-shadow:0 0 0 .1rem var(--main-bg-color)}.btn:focus{box-shadow:0 0 0 .2rem var(--main-bg-color)!important}.MultiCarousel{float:left;overflow:hidden;padding:15px;width:100%;position:relative}.MultiCarousel .MultiCarousel-inner{transition:1s ease all;float:left}.MultiCarousel .MultiCarousel-inner .item{float:left}.MultiCarousel .MultiCarousel-inner .item>div{text-align:center;padding:10px;margin:10px;background:#f1f1f1;color:#666}.MultiCarousel .leftLst,.MultiCarousel .rightLst{position:absolute;border-radius:50%;top:calc(50% - 20px)}.MultiCarousel .leftLst{left:0}.MultiCarousel .rightLst{right:0}.MultiCarousel .leftLst.over,.MultiCarousel .rightLst.over{pointer-events:none;background:#757d8a}.item img{cursor:pointer}
+@media only screen and (min-width: 552px) {
+    .marginRightDesktop{
+        margin-right: 1px !important;
+    }
+}
+
+h2 button{
+    color:#5a5a5a !important;
+  }
+
+  /* this style to desgne the button copy url qr code after save  */
+  .tooltip2 {
+position: relative;
+display: inline-block;
+}
+
+.tooltip2 .tooltiptext {
+visibility: hidden;
+width: 140px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px;
+position: absolute;
+z-index: 1;
+bottom: 150%;
+left: 50%;
+margin-left: -75px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip2 .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+.tooltip2:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+}
+
+.offscreen {
+    position: absolute;
+    left: -999em;
+}
+
+/* this is to style label in button qr code generateur  */
+
+.marker{
+    position: absolute;
+    left:-9999px;
+}
