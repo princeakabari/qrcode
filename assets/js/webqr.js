@@ -182,7 +182,7 @@ function setwebcam()
 function setwebcam2(options)
 {
 	console.log(options);
-	document.getElementById("result").innerHTML="- scanning -";
+	document.getElementById("result").innerHTML="Please Wait";
     if(stype==1)
     {
         setTimeout(captureToCanvas, 500);    
