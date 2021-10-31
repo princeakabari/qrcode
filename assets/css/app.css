@@ -215,9 +215,7 @@ section {
 		padding-left: 85px;
 	}
 
-	.mt-185 {
-		margin-top: 185px;
-	}
+	
 }
 
 @media (max-width: 991px) {
@@ -1067,11 +1065,11 @@ section {
 input,
 textarea,
 select {
-	background: #fdfafa;
+	background: #faf8ffab;
 	padding: 15px 30px;
 	border: 1px solid #efe7e7;
-	margin-bottom: 30px;
-	border-radius: 30px;
+	
+	border-radius: 10px;
 }
 
 input:focus,
@@ -1079,7 +1077,7 @@ textarea:focus,
 select:focus {
 	background: #fff;
 	-webkit-box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
-	box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
+	
 }
 
 textarea {
@@ -3584,7 +3582,7 @@ select {
 }
 
 .banner.banner-three .banner-content-wrap-two {
-	padding-top: 185px;
+	
 }
 
 .banner.banner-three .banner-content {
@@ -3700,7 +3698,7 @@ select {
 }
 
 .banner.banner-four .banner-content-wrap-two {
-	padding-top: 185px;
+	
 }
 
 .banner.banner-four .banner-content {
@@ -6868,7 +6866,7 @@ select {
 	}
 
 	.featured-four {
-		padding-top: 185px;
+		
 		padding-bottom: 40px;
 	}
 
@@ -10658,8 +10656,8 @@ select {
 }
 
 .faq-tabs li a {
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 15px;
+	font-weight: 500;
 	color: #fa7070;
 	background: rgba(250, 112, 112, 0.122);
 	padding: 1px 25px;
@@ -14964,10 +14962,11 @@ Download Two
 .call-back-forms select {
 	background: #f9f5f7;
 	border: 2px solid #f9f5f7;
-	height: 56px;
+	height: 30px;
 	width: 100%;
-	border-radius: 30px;
+	border-radius: 10px;
 	margin-bottom: 20px;
+	
 }
 
 .call-back-forms input:focus,
@@ -16522,9 +16521,7 @@ Download Two
 /*--------------------------------------------------------------
 ## Traking
 --------------------------------------------------------------*/
-.traking {
-	padding: 117px 0 80px;
-}
+
 
 @media (max-width: 991px) {
 	.traking {
@@ -17577,7 +17574,7 @@ Download Two
 
 .comment-form textarea {
 	height: 200px;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 .form-footer {

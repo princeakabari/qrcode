@@ -46,8 +46,8 @@
         }
 
         .textareatext {
-            width: 390px;
-            height: 150px;
+            width: 100%;
+            height: 100%;
         }
 
         .textareatext2 {
@@ -56,7 +56,7 @@
         }
 
         #tab_select a {
-            color: #00E;
+            color: rgb(0, 0, 0);
         }
 
         #section_drive A:link {
@@ -78,6 +78,7 @@
         .table1 td {
             padding-top: 2px;
             padding-bottom: 3px;
+            overflow-x:auto;
         }
     </style>
     <script type="text/javascript" src="assets/js/common3860.js?v=1"></script>
@@ -616,1268 +617,1272 @@
         <section class="callback">
 
             <div class="container">
-                
-                        <div class="call-back-forms wow fadeIn" data-wow-delay="0.3s">
-                            <h2 class="title">QR Code Generator</h2>
+
+                <div class="call-back-forms wow fadeIn" data-wow-delay="0.3s">
+                    <h2 class="title">QR Code Generator</h2>
 
 
 
 
-                            
-                                <script>
-                                    if (self != top) {
-                                        top.location = self.location;
-                                        //self.location="about:blank";
-                                    }
-                                </script>
-                                <br>
 
-                               
-                                <table>
+                    <script>
+                        if (self != top) {
+                            top.location = self.location;
+                            //self.location="about:blank";
+                        }
+                    </script>
+                    <br>
+
+
+
+                    <table border=0>
+                        <tr>
+                            <td valign=top>
+
+                                <table border=1 style="align-items: center;">
                                     <tr>
                                         <td>
-                                            <script type="text/javascript">
-                                                google_ad_client = "ca-pub-1113541014872557";
-                                                google_ad_slot = "6225151428";
-                                                google_ad_width = 728;
-                                                google_ad_height = 90;
-                                            </script>
-                                            <script type="text/javascript"
-                                                src="../../pagead2.googlesyndication.com/pagead/f.txt"
-                                                onerror="gadb=true;">
-                                                </script>
+                                            <!--
+                                            <div id='tab_select'>
+                                                <a id='tab_select1' href='javascript:void(0)'
+                                                    onclick='proc_show("section_freetext",this)'>Text</a>&nbsp;&nbsp;
+                                                <a id='tab_select2' href='javascript:void(0)'
+                                                    onclick='proc_show("section_url",this)'>URL</a>&nbsp;&nbsp;
+                                                <a href='javascript:void(0)'
+                                                    onclick='proc_show("section_phone",this)'>Phone
+                                                    Number</a>&nbsp;&nbsp;
+                                                <a href='javascript:void(0)'
+                                                    onclick='proc_show("section_sms",this)'>SMS</a>&nbsp;&nbsp;
+                                                <a href='javascript:void(0)'
+                                                    onclick='proc_show("section_contact",this)'>Contact</a>&nbsp;&nbsp;
+                                                <a href='javascript:void(0)' id='a_drive'
+                                                    onclick='proc_show("section_drive",this)'>Google
+                                                    Drive</a>
+                                            </div>-->
+                                            <div id='tab_select' class="tabs-wrapper wow pixFadeUp"
+                                                data-wow-delay="0.4s">
+                                                <ul class="nav faq-tabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id='tab_select1'
+                                                            onclick='proc_show("section_freetext",this)'
+                                                            data-toggle="tab" href="javascript:void(0)" role="tab"
+                                                            aria-controls="design" aria-selected="true">Text</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" onclick='proc_show("section_url",this)'
+                                                            data-toggle="tab" href="javascript:void(0)" role="tab"
+                                                            aria-controls="service" aria-selected="false">URL</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab"
+                                                            onclick='proc_show("section_phone",this)'
+                                                            href="javascript:void(0)" role="tab" aria-controls="general"
+                                                            aria-selected="false"> Phone Number</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab"
+                                                            onclick='proc_show("section_sms",this)'
+                                                            href="javascript:void(0)" role="tab"
+                                                            aria-controls="branding" aria-selected="false">SMS</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab"
+                                                            onclick='proc_show("section_contact",this)'
+                                                            href="javascript:void(0)" role="tab"
+                                                            aria-controls="branding" aria-selected="false">Contact</a>
+                                                    </li>
+                                                </ul>
+
                                     <tr>
                                         <td>
-                                </table>
 
-                                <table border=0>
-                                    <tr>
-                                        <td valign=top>
-
-                                            <table border=0 cellpadding=5 bgcolor='#E1F3DA'>
-                                                <tr>
-                                                    <td>
-
-                                                        <div id='tab_select'>
-                                                            <a id='tab_select1' href='javascript:void(0)'
-                                                                onclick='proc_show("section_freetext",this)'>Text</a>&nbsp;&nbsp;
-                                                            <a id='tab_select2' href='javascript:void(0)'
-                                                                onclick='proc_show("section_url",this)'>URL</a>&nbsp;&nbsp;
-                                                            <a href='javascript:void(0)'
-                                                                onclick='proc_show("section_phone",this)'>Phone
-                                                                Number</a>&nbsp;&nbsp;
-                                                            <a href='javascript:void(0)'
-                                                                onclick='proc_show("section_sms",this)'>SMS</a>&nbsp;&nbsp;
-                                                            <a href='javascript:void(0)'
-                                                                onclick='proc_show("section_contact",this)'>Contact</a>&nbsp;&nbsp;
-                                                            <a href='javascript:void(0)' id='a_drive'
-                                                                onclick='proc_show("section_drive",this)'>Google
-                                                                Drive</a>
-                                                        </div>
-
-                                                <tr>
-                                                    <td>
-
-                                                        <div id='section_freetext' style='display:none'>
-                                                            <table>
-                                                                <tr>
-                                                                    <td>
-                                                                        <textarea id='section_freetext_text'
-                                                                            class='textareatext'></textarea>
-                                                            </table>
-                                                        </div>
-
-                                                        <div id='section_url' style='display:none'>
-                                                            <table>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type=text id='section_url_text'
-                                                                            class='inputtext' value=''>
-                                                            </table>
-                                                        </div>
-
-                                                        <div id='section_phone' style='display:none'>
-                                                            <table>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type=text id='section_phone_text'
-                                                                            class='inputtext'>
-                                                            </table>
-                                                        </div>
-
-                                                        <div id='section_sms' style='display:none'>
-                                                            <table>
-                                                                <tr>
-                                                                    <td>
-                                                                        Phone Number<br>
-                                                                        <input type=text id='section_sms_number'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Message<br>
-                                                                        <textarea id='section_sms_message'
-                                                                            class='textareatext'></textarea>
-                                                            </table>
-                                                        </div>
-
-                                                        <div id='section_contact' style='display:none'>
-                                                            <table>
-                                                                <tr>
-                                                                    <td>
-                                                                        First Name<br>
-                                                                        <input type=text id='section_contact_firstname'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Name<br>
-                                                                        <input type=text id='section_contact_name'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Organization<br>
-                                                                        <input type=text
-                                                                            id='section_contact_organization'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Email<br>
-                                                                        <input type=text id='section_contact_email'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Cell Phone Number<br>
-                                                                        <input type=text id='section_contact_cellphone'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Phone Number<br>
-                                                                        <input type=text id='section_contact_phone'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Fax Number<br>
-                                                                        <input type=text id='section_contact_fax'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Street<br>
-                                                                        <input type=text id='section_contact_street'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Postcode<br>
-                                                                        <input type=text id='section_contact_postcode'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        City<br>
-                                                                        <input type=text id='section_contact_city'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Region/State<br>
-                                                                        <input type=text id='section_contact_region'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        Country<br>
-                                                                        <input type=text id='section_contact_country'
-                                                                            class='inputtext'>
-                                                                <tr>
-                                                                    <td>
-                                                                        URL<br>
-                                                                        <input type=text id='section_contact_url'
-                                                                            class='inputtext'>
-                                                            </table>
-                                                        </div>
-
-                                                        <div id='section_drive' style='display:none'>
-                                                            <center>
-                                                                Generate QR Code, Share link for Google Drive file.
-                                                                Share with friends.<br>
-                                                                Select a file or folder from Google Drive.
-                                                                <div style="margin-top:4px">
-                                                                    <button type="button" id='btn_open'
-                                                                        onclick="gd_open_picker()"
-                                                                        title="Select, download, share a file from Google Drive"
-                                                                        style=""><img
-                                                                            src="../../iblogbox.github.io/js/gdrive/product16.png"
-                                                                            width=14 align="absmiddle"> Select a file or
-                                                                        folder to Generate QR Code</button>
-                                                                </div>
-                                                            </center>
-
-                                                            <table id="gd_container" align=center cellpadding=0
-                                                                cellspacing=0 style="display:none;margin-top:5px;">
-                                                                <tr>
-                                                                    <td>
-                                                                        <table>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div id="downlink"
-                                                                                        style="margin-top:0px;width:450px">
-                                                                                    </div>
-                                                                                    <div id="msg"
-                                                                                        style="display:;margin-top:2px;font-size:15px;color:green;width:450px;white-space:nowrap;overflow:hidden;border:0px solid red">
-                                                                                    </div>
-                                                                            <tr>
-                                                                                <td><span id="txtsharelink">Sharing
-                                                                                        URL</span>
-                                                                            <tr>
-                                                                                <td><input type=text id="txtshareurl"
-                                                                                        readonly
-                                                                                        style="width:450px;font-size:15px">
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <table cellpadding=0 cellspacing=0>
-                                                                                        <tr>
-                                                                                            <td><button type="button"
-                                                                                                    id="btn_share"
-                                                                                                    disabled=true
-                                                                                                    onclick="attach_shareall(true)">Share
-                                                                                                    this
-                                                                                                    file</button>
-                                                                                            <td><button type="button"
-                                                                                                    id="btn_unshare"
-                                                                                                    disabled=true
-                                                                                                    onclick="attach_shareall(false)">UnShare</button>
-                                                                                            <td><button type="button"
-                                                                                                    id="btn_refresh"
-                                                                                                    disabled=true
-                                                                                                    onclick="attach_refresh()">Refresh</button>
-                                                                                            <td width=5>
-                                                                                            <td><button type="button"
-                                                                                                    id="btn_dialog"
-                                                                                                    disabled=true
-                                                                                                    onclick="attach_dialog()">Open
-                                                                                                    Share
-                                                                                                    Dialog</button>
-                                                                                    </table>
-                                                                                    <div id="downlink2"></div>
-                                                                        </table>
-                                                            </table>
-                                                        </div>
-
-                                                <tr>
-                                                    <td>
-                                                        <form name='f1' onsubmit="return false">
-                                                            <label><input name='select_size' type='radio' value='50'
-                                                                    onclick='proc_sizechange()'>50px</label>
-                                                            <label><input name='select_size' type='radio' value='150'
-                                                                    onclick='proc_sizechange()'>150px</label>
-                                                            <label><input name='select_size' type='radio' value='200'
-                                                                    checked onclick='proc_sizechange()'>200px</label>
-                                                            <label><input name='select_size' type='radio' value='250'
-                                                                    onclick='proc_sizechange()'>250px</label>
-                                                            <label><input name='select_size' type='radio' value='300'
-                                                                    onclick='proc_sizechange()'>300px</label>
-                                                            <div style='margin-top:4px'>
-                                                                <label><input name='select_size' type='radio' value='0'
-                                                                        onclick='proc_sizechange()'>User
-                                                                    define</label>&nbsp;&nbsp;<input type=text
-                                                                    name='select_size_custom' style='width:60px'
-                                                                    value='400' onkeyup='proc_sizechange2()'>&nbsp;px
-                                                                (100~1000)
-                                                            </div>
-                                                            <div style='margin-top:4px'>
-                                                                &nbsp;Generator Type &nbsp;<select id='gen_type'
-                                                                    onchange='gen_type_onchange()'>
-                                                                    <option value="local">Local QR Code Generator
-                                                                    <option value="web">Web QR Code Generator
-                                                                </select>
-                                                            </div>
-                                                        </form>
-
-                                                        <button onClick="proc_generate(true)" class="banner-btn pix-btn wow fadeInUp">&nbsp;
-                                                            <font style='font-size:17px' >Make QR Code</font>
-                                                        </button>
-
-                                                <tr>
-                                                    <td>
-                                                        <div id='link_section' style='display:none'>
-                                                            <button onClick="proc_showshare()">
-                                                                <font style='font-size:15px'>Share link</font>
-                                                            </button>
-                                                            <br><textarea id='share_link_text' class='textareatext2'
-                                                                style='display:none'></textarea>
-
-                                                            <div style='margin-top:9px'>
-                                                                <button id='btn_short_link' onClick="proc_shortlink()">
-                                                                    <font style='font-size:14px'>Make short link</font>
-                                                                </button> <img id='img_short_link_wait'
-                                                                    style='display:none' src='../img/wait.gif'>
-                                                                <div id='div_short_link' style='display:none'>
-                                                                    <table>
-                                                                        <tr>
-                                                                            <td>QR image URL
-                                                                            <td><input type=text
-                                                                                    id='short_link_qrimageurl'
-                                                                                    class='inputtext2'>
-                                                                        <tr>
-                                                                            <td>QR image TAG
-                                                                            <td><input type=text
-                                                                                    id='short_link_qrimagetag'
-                                                                                    class='inputtext2'>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                
-                                            </table>
-
-                                        <td width=10>
-
-                                        <td valign=top>
-                                            <br>
-                                            <script>
-                                                function proc_imgerror(f) {
-                                                    //f.src="img/blank.png";
-                                                    _getid('qrcode_img').style.display = 'none';
-                                                    _getid('div_qrcode_download').style.display = 'none';
-                                                }
-                                            </script>
-
-                                            <div id='div_qrcode_download' style='display:none;margin-left:7px'>
-                                                
-                                                
-                                                <img id='qrcode_img' src='img/blank.png' onerror='proc_imgerror(this)'
-                                                    style='display:none'>
-                                                <div id="qrcode_local"></div><br>
-                                                <br>
-                                                <a id='qrcode_download' href='#' class="banner-btn pix-btn wow fadeInUp" data-wow-delay="0.7s">Download QR Code
-                                                </a>
+                                            <div id='section_freetext' style='display:none '>
+                                                <table><td>
+                                                    Text<br>
+                                                    <tr>
+                                                        <td>
+                                                            <input id='section_freetext_text'
+                                                            class='inputtext' placeholder="Enter Text"></INPUT>
+                                                </table>
                                             </div>
 
-                                </table>
+                                            <div id='section_url' style='display:none'>
+                                                <table><td>
+                                                    Enter Your URL<br>
+                                                    <tr>
+                                                        <td>
+                                                            <input type=text id='section_url_text' class='inputtext'
+                                                                value=''>
+                                                </table>
+                                            </div>
 
-                                <table style="margin-top:10px;">
+                                            <div id='section_phone' style='display:none'>
+                                                <table><td>
+                                                    Enter Your Phone Number <br>
+                                                    <tr>
+                                                        <td>
+                                                            <input type=text id='section_phone_text' class='inputtext'>
+                                                </table>
+                                            </div>
+
+                                            <div id='section_sms' style='display:none'>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            Phone Number<br>
+                                                            <input type=text id='section_sms_number' class='inputtext' placeholder="Enter Number">
+                                                    <tr>
+                                                        <td>
+                                                            Message<br>
+                                                            <textarea id='section_sms_message'
+                                                                class='textareatext' placeholder="Enter Message"></textarea>
+                                                </table>
+                                            </div>
+
+                                            <div id='section_contact' style='display:none'>
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            First Name<br>
+                                                            <input type=text id='section_contact_firstname'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Name<br>
+                                                            <input type=text id='section_contact_name'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Organization<br>
+                                                            <input type=text id='section_contact_organization'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Email<br>
+                                                            <input type=text id='section_contact_email'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Cell Phone Number<br>
+                                                            <input type=text id='section_contact_cellphone'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Phone Number<br>
+                                                            <input type=text id='section_contact_phone'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Fax Number<br>
+                                                            <input type=text id='section_contact_fax' class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Street<br>
+                                                            <input type=text id='section_contact_street'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Postcode<br>
+                                                            <input type=text id='section_contact_postcode'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            City<br>
+                                                            <input type=text id='section_contact_city'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Region/State<br>
+                                                            <input type=text id='section_contact_region'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            Country<br>
+                                                            <input type=text id='section_contact_country'
+                                                                class='inputtext'>
+                                                    <tr>
+                                                        <td>
+                                                            URL<br>
+                                                            <input type=text id='section_contact_url' class='inputtext'>
+                                                </table>
+                                            </div>
+
+                                            <div id='section_drive' style='display:none'>
+                                                <center>
+                                                    Generate QR Code, Share link for Google Drive file.
+                                                    Share with friends.<br>
+                                                    Select a file or folder from Google Drive.
+                                                    <div style="margin-top:4px">
+                                                        <button type="button" id='btn_open' onclick="gd_open_picker()"
+                                                            title="Select, download, share a file from Google Drive"><img
+                                                                src="../../iblogbox.github.io/js/gdrive/product16.png"
+                                                                width=14 align="absmiddle"> Select a file or
+                                                            folder to Generate QR Code</button>
+                                                    </div>
+                                                </center>
+
+                                                <table id="gd_container" align=center cellpadding=0 cellspacing=0
+                                                    style="display:none;margin-top:5px;">
+                                                    <tr>
+                                                        <td>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div id="downlink"
+                                                                            style="margin-top:0px;width:450px">
+                                                                        </div>
+                                                                        <div id="msg">
+                                                                        </div>
+                                                                <tr>
+                                                                    <td><span id="txtsharelink">Sharing
+                                                                            URL</span>
+                                                                <tr>
+                                                                    <td><input type=text id="txtshareurl" readonly
+                                                                            style="width:450px;font-size:15px">
+                                                                <tr>
+                                                                    <td>
+                                                                        <table cellpadding=0 cellspacing=0>
+                                                                            <tr>
+                                                                                <td><button type="button" id="btn_share"
+                                                                                        disabled=true
+                                                                                        onclick="attach_shareall(true)">Share
+                                                                                        this
+                                                                                        file</button>
+                                                                                <td><button type="button"
+                                                                                        id="btn_unshare" disabled=true
+                                                                                        onclick="attach_shareall(false)">UnShare</button>
+                                                                                <td><button type="button"
+                                                                                        id="btn_refresh" disabled=true
+                                                                                        onclick="attach_refresh()">Refresh</button>
+                                                                                <td width=5>
+                                                                                <td><button type="button"
+                                                                                        id="btn_dialog" disabled=true
+                                                                                        onclick="attach_dialog()">Open
+                                                                                        Share
+                                                                                        Dialog</button>
+                                                                        </table>
+                                                                        <div id="downlink2"></div>
+                                                            </table>
+                                                </table>
+                                            </div>
+
                                     <tr>
                                         <td>
-                                            <script type="text/javascript">
-                                                google_ad_client = "ca-pub-1113541014872557";
-                                                google_ad_slot = "6225151428";
-                                                google_ad_width = 728;
-                                                google_ad_height = 90;
-                                            </script>
-                                            <script type="text/javascript"
-                                                src="../../pagead2.googlesyndication.com/pagead/f.txt">
-                                                </script>
+                                            <form name='f1' onsubmit="return false">
+                                                <label><input name='select_size' type='radio' value='50'
+                                                        onclick='proc_sizechange()'>50px</label>
+                                                <label><input name='select_size' type='radio' value='150'
+                                                        onclick='proc_sizechange()'>150px</label>
+                                                <label><input name='select_size' type='radio' value='200' checked
+                                                        onclick='proc_sizechange()'>200px</label>
+                                                <label><input name='select_size' type='radio' value='250'
+                                                        onclick='proc_sizechange()'>250px</label>
+                                                <label><input name='select_size' type='radio' value='300'
+                                                        onclick='proc_sizechange()'>300px</label>
+                                                <div style='margin-top:4px'>
+                                                    <label><input name='select_size' type='radio' value='0'
+                                                            onclick='proc_sizechange()'>User
+                                                        define</label>&nbsp;&nbsp;<input type=text
+                                                        name='select_size_custom'  value='400px'
+                                                        onkeyup='proc_sizechange2()'>&nbsp;px
+                                                    (100~1000)
+                                                </div>
+                                                <div style='margin-top:4px'>
+                                                    &nbsp;Generator Type &nbsp;<select id='gen_type'
+                                                        onchange='gen_type_onchange()'>
+                                                        <option value="local">Local QR Code Generator
+                                                        <option value="web">Web QR Code Generator
+                                                    </select>
+                                                </div>
+                                            </form>
+
+                                            <button onClick="proc_generate(true)"
+                                                class=" pix-btn">&nbsp;
+                                                <font>Generator QR Code</font>
+                                            </button>
+
                                     <tr>
                                         <td>
+                                            <div id='link_section' style='display:none'>
+                                                <button onClick="proc_showshare()">
+                                                    <font style='font-size:15px'>Share link</font>
+                                                </button>
+                                                <br><textarea id='share_link_text' class='textareatext2'
+                                                    style='display:none'></textarea>
+
+                                                <div style='margin-top:9px'>
+                                                    <button id='btn_short_link' onClick="proc_shortlink()">
+                                                        <font style='font-size:14px'>Make short link</font>
+                                                    </button> <img id='img_short_link_wait' style='display:none'
+                                                        src='../img/wait.gif'>
+                                                    <div id='div_short_link' style='display:none'>
+                                                        <table>
+                                                            <tr>
+                                                                <td>QR image URL
+                                                                <td><input type=text id='short_link_qrimageurl'
+                                                                        class='inputtext2'>
+                                                            <tr>
+                                                                <td>QR image TAG
+                                                                <td><input type=text id='short_link_qrimagetag'
+                                                                        class='inputtext2'>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                 </table>
 
-                                
-                                <div id="layer_message" class="gd_div" style="z-index:10001;display:none;"></div>
-                                <div id="gd_window" class="gd_div" style="z-index:10000001;display:none;"></div>
-                                <div id="gd_btn_login" class="gd_div" style="z-index:10000000;display:none;">
-                                    <table>
-                                        <tr>
-                                            <td align=center><button onclick="gd_login_manual()"
-                                                    style="font-size:20px"><img
-                                                        src="../../iblogbox.github.io/js/gdrive/product20.png"
-                                                        align="absmiddle"> Login &
-                                                    Authorize</button> <button onclick="gd_login_close()"
-                                                    style="font-size:20px">Close</button>
-                                        <tr>
-                                            <td>To use this app, Please login to the Google Drive and authorize this app
-                                                or website.
-                                                <br>(Note: If your browser block or disable the third-party cookies,
-                                                this login does not work
-                                                correctly.)
-                                    </table>
-                                </div>
+                            <td width=10>
+
+                            <td valign=top>
+                                <br>
                                 <script>
-                                    var CLIENT_ID = '933272287905-cig0l435q12pdnk3rlr7ilviroqvlh5m.apps.googleusercontent.com';
-                                    var SCOPES = [
-                                        'https://www.googleapis.com/auth/drive.install',
-                                        'https://www.googleapis.com/auth/drive.file'
-                                    ];
-                                    var gd_developerKey = 'AIzaSyBJjlNJdlyxkkyAQQ-y4SSCJsWD9Opt90A';
-                                    var gd_mimetype = "";
-                                    var gd_export_extension = ["pdf", "png"];
-                                    var gd_state = '';
+                                    function proc_imgerror(f) {
+                                        //f.src="img/blank.png";
+                                        _getid('qrcode_img').style.display = 'none';
+                                        _getid('div_qrcode_download').style.display = 'none';
+                                    }
+                                </script>
 
-                                    var gd_picker, gd_loaded, gd_pickerloaded, gd_lastprogress, gd_issupported, gd_isdownloading, gd_load_timer, gd_bloburl, gd_state2;
-                                    var gd_loginexp = 0;
-                                    var gd_callback;
-                                    var ismsie = false;
-                                    if (navigator.appName != "Netscape") {
-                                        if (navigator.userAgent.indexOf("MSIE") >= 0) ismsie = true;
+                                <div id='div_qrcode_download' style='display:none;margin-left:7px'>
+
+
+                                    <img id='qrcode_img' src='img/blank.png' onerror='proc_imgerror(this)'
+                                        style='display:none'>
+                                    <div id="qrcode_local"></div><br>
+                                    <br>
+                                    <a id='qrcode_download' href='#' class="banner-btn pix-btn wow fadeInUp"
+                                        data-wow-delay="0.7s">Download QR Code
+                                    </a>
+                                </div>
+
+                    </table>
+
+                    <table style="margin-top:10px;">
+                        <tr>
+                            <td>
+                                <script type="text/javascript">
+                                    google_ad_client = "ca-pub-1113541014872557";
+                                    google_ad_slot = "6225151428";
+                                    google_ad_width = 728;
+                                    google_ad_height = 90;
+                                </script>
+                                <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+                                </script>
+                        <tr>
+                            <td>
+                    </table>
+
+
+                    <div id="layer_message" class="gd_div" style="z-index:10001;display:none;"></div>
+                    <div id="gd_window" class="gd_div" style="z-index:10000001;display:none;"></div>
+                    <div id="gd_btn_login" class="gd_div" style="z-index:10000000;display:none;">
+                        <table>
+                            <tr>
+                                <td align=center><button onclick="gd_login_manual()" style="font-size:20px"><img
+                                            src="../../iblogbox.github.io/js/gdrive/product20.png" align="absmiddle">
+                                        Login &
+                                        Authorize</button> <button onclick="gd_login_close()"
+                                        style="font-size:20px">Close</button>
+                            <tr>
+                                <td>To use this app, Please login to the Google Drive and authorize this app
+                                    or website.
+                                    <br>(Note: If your browser block or disable the third-party cookies,
+                                    this login does not work
+                                    correctly.)
+                        </table>
+                    </div>
+                    <script>
+                        var CLIENT_ID = '933272287905-cig0l435q12pdnk3rlr7ilviroqvlh5m.apps.googleusercontent.com';
+                        var SCOPES = [
+                            'https://www.googleapis.com/auth/drive.install',
+                            'https://www.googleapis.com/auth/drive.file'
+                        ];
+                        var gd_developerKey = 'AIzaSyBJjlNJdlyxkkyAQQ-y4SSCJsWD9Opt90A';
+                        var gd_mimetype = "";
+                        var gd_export_extension = ["pdf", "png"];
+                        var gd_state = '';
+
+                        var gd_picker, gd_loaded, gd_pickerloaded, gd_lastprogress, gd_issupported, gd_isdownloading, gd_load_timer, gd_bloburl, gd_state2;
+                        var gd_loginexp = 0;
+                        var gd_callback;
+                        var ismsie = false;
+                        if (navigator.appName != "Netscape") {
+                            if (navigator.userAgent.indexOf("MSIE") >= 0) ismsie = true;
+                        }
+
+                        function gd_btn_login2(e, callback) {
+                            var sl = getScrollLeft();
+                            var st = getScrollTop();
+                            var w = getWindowWidth();
+                            var h = getWindowHeight();
+
+                            function go(a) {
+                                if (a && a.style.display == '') {
+                                    var x = sl + ((w - a.clientWidth) / 2);
+                                    var y = st + ((h - a.clientHeight) / 2);
+                                    a.style["border"] = "1px solid #000000";
+                                    a.style["padding"] = "10px";
+                                    a.style.left = x + "px";
+                                    a.style.top = y + "px";
+                                }
+                            }
+                            function go2() {
+                                var a = _getid("gviewer");
+                                if (a.style.display != '') return;
+                                if (!gresp) return;
+                                var dy = 40;
+                                var dy2 = 15;
+                                var dr = 0.07;
+                                if (gresp.videoMediaMetadata && gresp.videoMediaMetadata.width && gresp.videoMediaMetadata.height) {
+                                    var odw = gresp.videoMediaMetadata.width; var odh = gresp.videoMediaMetadata.height;
+                                    var dw = odw; var dh = odh;
+                                    var mw = w - (parseInt(w * dr) * 2);
+                                    var mh = h - dy - dy2;
+                                    var dt = 0;
+                                    if (dw > mw) {
+                                        dw = mw; dh = dw * odh / odw; dt = 12;
+                                    }
+                                    if (dh > mh) {
+                                        dh = mh; dw = dh * odw / odh; dt = 12;
+                                    }
+                                    a.style.left = (sl + ((w - dw) / 2)) + 'px';
+                                    a.style.width = dw + 'px';
+                                    var y = (st + ((h - dh) / 2) + dt);
+                                    a.style.top = y + 'px';
+                                    a.style.height = dh + 'px';
+                                } else {
+                                    a.style.left = (sl + parseInt(w * dr)) + 'px';
+                                    var y = st + dy;
+                                    a.style.top = y + 'px';
+                                    a.style.width = (w - (parseInt(w * dr) * 2)) + 'px';
+                                    a.style.height = (h - dy - dy2) + 'px';
+                                }
+                                var b = _getid("btn_gvclose");
+                                b.style.display = '';
+                                var x = sl + ((w - b.offsetWidth) / 2);
+                                y = y - b.offsetHeight;
+                                b.style.left = x + 'px';
+                                b.style.top = y + 'px';
+                            }
+                            go(_getid("gd_btn_login"));
+                            go(_getid("gd_window"));
+                            setTimeout(function () {
+                                go(_getid("gd_btn_login"));
+                                go(_getid("gd_window"));
+                                if (callback) callback();
+                            }, 10);
+                            go2();
+                        }
+                        function gd_btn_login(isshow) {
+                            var a = _getid("gd_btn_login");
+                            if (isshow) {
+                                a.style.display = '';
+                                gd_btn_login2();
+                            } else {
+                                a.style.display = 'none';
+                            }
+                        }
+                        function gd_login_close() {
+                            gd_btn_login(false);
+                            _getid("downlink").innerHTML = '';
+                            _getid("gd_container").style.display = 'none';
+                            gd_state = '';
+                        }
+                        function gd_login_manual() {
+                            var p = { 'client_id': CLIENT_ID, 'scope': SCOPES.join(' '), 'immediate': false };
+                            if (gd_userId) { p['login_hint'] = gd_userId; p['authuser'] = -1; }
+                            gapi.auth.authorize(p, function (authResult) {
+                                if (authResult && !authResult.error) {
+                                    gd_loginexp = (new Date()).getTime() + parseInt(authResult.expires_in * 0.7 * 1000);
+                                    gd_btn_login(false); gd_info();
+                                    show_message("Login ok!!");
+                                    if (gd_callback) gd_callback(true);
+                                    else gd_open_state(true);
+                                } else {
+                                    gd_btn_login(true);
+                                    show_message("Login failed!!");
+                                }
+                            });
+                        }
+                        function gd_login(callback, react) {
+                            if (gd_loginexp == 0 || gd_loginexp < (new Date()).getTime()) {
+                            } else {
+                                callback(true);
+                                return;
+                            }
+                            var p = { 'client_id': CLIENT_ID, 'scope': SCOPES.join(' '), 'immediate': true };
+                            if (gd_userId) { p['login_hint'] = gd_userId; p['authuser'] = -1; }
+                            gapi.auth.authorize(p, function (authResult) {
+                                if (authResult && !authResult.error) {
+                                    gd_loginexp = (new Date()).getTime() + parseInt(authResult.expires_in * 0.7 * 1000);
+                                    gd_btn_login(false); gd_info();
+                                    callback(true);
+                                } else {
+                                    show_message("Login failed!!");
+                                    gd_btn_login(true);
+                                    callback(false);
+                                    if (react) gd_callback = callback;
+                                    else gd_callback = null;
+                                }
+                            });
+                        }
+
+                        function gd_loadpicker() {
+                            gapi.load('picker', {
+                                'callback': function () {
+                                    gd_pickerloaded = true;
+                                }
+                            });
+                        }
+                        function gd_createpicker() {
+                            var access_token = gapi.auth.getToken().access_token;
+                            if (!access_token) {
+                                alert('Error!! No access token.');
+                                return;
+                            }
+                            if (!gd_picker) {
+                                //var view = new google.picker.View(google.picker.ViewId.DOCS);
+                                //view.setMimeTypes("application/zip");
+                                var view2 = new google.picker.DocsView(google.picker.ViewId.DOCS);
+                                if (gd_mimetype) view2.setMimeTypes(gd_mimetype);
+                                view2.setMode(google.picker.DocsViewMode.LIST);
+
+                                var view4 = new google.picker.DocsView();
+                                view4.setIncludeFolders(true);
+                                view4.setSelectFolderEnabled(true);
+                                view4.setParent("root");
+                                view4.setMimeTypes(gd_mimetype);
+                                view4.setMode(google.picker.DocsViewMode.LIST);
+                                var view5 = new google.picker.View(google.picker.ViewId.RECENTLY_PICKED);
+
+                                gd_picker = new google.picker.PickerBuilder()
+                                    //.enableFeature(google.picker.Feature.NAV_HIDDEN)
+                                    //.enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
+                                    .setAppId(CLIENT_ID.split("-")[0])
+                                    .setLocale(window.navigator.language || window.navigator.userLanguage || "en") //window.navigator.language || window.navigator.userLanguage || "en"
+                                    .setTitle("Select a file or folder")
+                                    .setOAuthToken(access_token)
+                                    .addView(view2)
+                                    .addView(view4)
+                                    .addView(view5)
+                                    .addView(new google.picker.DocsUploadView())
+                                    .setDeveloperKey(gd_developerKey)
+                                    .setCallback(gd_pickercallback)
+                                    .build();
+                            }
+                            gd_picker.setVisible(true);
+                        }
+                        function gd_pickercallback(data) {
+                            if (data.action == google.picker.Action.PICKED) {
+                                //console.log(data);
+                                if (data.docs && data.docs.length > 0 && data.docs[0].id) {
+                                    var fileId = data.docs[0].id;
+                                    gd_loadfile(fileId);
+                                }
+                            }
+                        }
+
+                        var gexportlist = [];
+                        function gd_loadfile(fileId, fromstate) {
+                            if (gd_isdownloading) {
+                                alert("It's downloading. Please try again in a few minutes. or Cancel the current download.");
+                                return;
+                            }
+                            proc_show("section_drive", _getid('a_drive'));
+                            _getid("gd_container").style.display = '';
+                            _getid("downlink").innerHTML = "<table><tr><td><div id='gd_progress'>Ready...</div></table>";
+                            gapi.client.load('drive', 'v2', function () {
+                                var request = gapi.client.drive.files.get({
+                                    'fileId': fileId
+                                });
+                                request.execute(function (resp) {
+                                    function end() {
+                                        gd_isdownloading = false;
+                                        clearTimeout(messagetimer);
+                                        hide_message();
+                                        var a = _getid("downlink");
+                                        if (a.innerHTML && a.innerHTML.indexOf("adownlink") < 0) {
+                                            _getid("downlink").innerHTML = '';
+                                        }
+                                    }
+                                    function error(s) {
+                                        alert(s);
+                                    }
+                                    //console.log(resp);
+
+                                    if (resp.mimeType == 'application/vnd.google-apps.folder') {
+                                        end();
+                                        var s = resp.title || 'No Name';
+                                        _getid("downlink").innerHTML = 'Folder: <a id="adownlink" style="font-size:17px" href="' + gd_weburl() + '#folders/' + resp.id + '" data="' + resp.id + '" onclick="gd_clickweburl(this)" target="_blank">Show this folder</a>&nbsp; ';
+                                        //<a href="#" onclick="gd_msgclear();return false;">Close</a> '+"";
+                                        _getid("msg").innerHTML = html_entity_encode(s);
+                                        proc_setvalue(s, resp);
+                                        return;
                                     }
 
-                                    function gd_btn_login2(e, callback) {
-                                        var sl = getScrollLeft();
-                                        var st = getScrollTop();
-                                        var w = getWindowWidth();
-                                        var h = getWindowHeight();
+                                    var accessToken = gapi.auth.getToken().access_token;
+                                    if (!accessToken) {
+                                        end();
+                                        alert('Error!! No access token.');
+                                        return;
+                                    }
+                                    var downloadurl;
+                                    if (resp.downloadUrl) {
+                                        downloadurl = resp.downloadUrl;
+                                        go();
+                                    } else if (resp.exportLinks) {
+                                        /*for (x in resp.exportLinks){	
+                                            for(var i = 0; i < gd_export_extension.length; i++){    
+                                                if(x.toLowerCase().indexOf(gd_export_extension[i])>=0){
+                                                    downloadurl=resp.exportLinks[x];
+                                                    resp.fileExtension=gd_export_extension[i];
+                                                    break;
+                                                }						
+                                            }					
+                                            if(downloadurl)break;
+                                        }*/
 
-                                        function go(a) {
-                                            if (a && a.style.display == '') {
-                                                var x = sl + ((w - a.clientWidth) / 2);
-                                                var y = st + ((h - a.clientHeight) / 2);
-                                                a.style["border"] = "1px solid #000000";
-                                                a.style["padding"] = "10px";
-                                                a.style.left = x + "px";
-                                                a.style.top = y + "px";
-                                            }
+                                        gexportlist = [];
+                                        for (x in resp.exportLinks) {
+                                            var a = {};
+                                            a.title = resp.title;
+                                            a.name = x;
+                                            a.url = (resp.exportLinks[x] || '') + '&access_token=' + encodeURIComponent(accessToken);
+                                            var match = a.url.match(/(exportFormat=|format=)(.*?)(&|$)/i);
+                                            if (match) a.ext = match[2];
+                                            gexportlist.push(a);
                                         }
-                                        function go2() {
-                                            var a = _getid("gviewer");
-                                            if (a.style.display != '') return;
-                                            if (!gresp) return;
-                                            var dy = 40;
-                                            var dy2 = 15;
-                                            var dr = 0.07;
-                                            if (gresp.videoMediaMetadata && gresp.videoMediaMetadata.width && gresp.videoMediaMetadata.height) {
-                                                var odw = gresp.videoMediaMetadata.width; var odh = gresp.videoMediaMetadata.height;
-                                                var dw = odw; var dh = odh;
-                                                var mw = w - (parseInt(w * dr) * 2);
-                                                var mh = h - dy - dy2;
-                                                var dt = 0;
-                                                if (dw > mw) {
-                                                    dw = mw; dh = dw * odh / odw; dt = 12;
+                                        if (gexportlist.length > 0) downloadurl = "ok.html";
+                                        go();
+
+                                    } else { go(); }
+
+                                    function go() {
+                                        if (downloadurl) {
+                                            function getsize() {
+                                                function humanFileSize(bytes) {
+                                                    var thresh = 1024;
+                                                    if (bytes < thresh) return bytes + ' B';
+                                                    var units = ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+                                                    var u = -1;
+                                                    do {
+                                                        bytes /= thresh;
+                                                        ++u;
+                                                    } while (bytes >= thresh);
+                                                    return bytes.toFixed(1) + ' ' + units[u];
                                                 }
-                                                if (dh > mh) {
-                                                    dh = mh; dw = dh * odw / odh; dt = 12;
-                                                }
-                                                a.style.left = (sl + ((w - dw) / 2)) + 'px';
-                                                a.style.width = dw + 'px';
-                                                var y = (st + ((h - dh) / 2) + dt);
-                                                a.style.top = y + 'px';
-                                                a.style.height = dh + 'px';
-                                            } else {
-                                                a.style.left = (sl + parseInt(w * dr)) + 'px';
-                                                var y = st + dy;
-                                                a.style.top = y + 'px';
-                                                a.style.width = (w - (parseInt(w * dr) * 2)) + 'px';
-                                                a.style.height = (h - dy - dy2) + 'px';
+                                                var s;
+                                                if (!resp.fileSize) s = ' (Unknown Size)';
+                                                else s = ' (' + humanFileSize(resp.fileSize) + ')';
+                                                return s;
                                             }
-                                            var b = _getid("btn_gvclose");
-                                            b.style.display = '';
-                                            var x = sl + ((w - b.offsetWidth) / 2);
-                                            y = y - b.offsetHeight;
-                                            b.style.left = x + 'px';
-                                            b.style.top = y + 'px';
-                                        }
-                                        go(_getid("gd_btn_login"));
-                                        go(_getid("gd_window"));
-                                        setTimeout(function () {
-                                            go(_getid("gd_btn_login"));
-                                            go(_getid("gd_window"));
-                                            if (callback) callback();
-                                        }, 10);
-                                        go2();
-                                    }
-                                    function gd_btn_login(isshow) {
-                                        var a = _getid("gd_btn_login");
-                                        if (isshow) {
-                                            a.style.display = '';
-                                            gd_btn_login2();
-                                        } else {
-                                            a.style.display = 'none';
-                                        }
-                                    }
-                                    function gd_login_close() {
-                                        gd_btn_login(false);
-                                        _getid("downlink").innerHTML = '';
-                                        _getid("gd_container").style.display = 'none';
-                                        gd_state = '';
-                                    }
-                                    function gd_login_manual() {
-                                        var p = { 'client_id': CLIENT_ID, 'scope': SCOPES.join(' '), 'immediate': false };
-                                        if (gd_userId) { p['login_hint'] = gd_userId; p['authuser'] = -1; }
-                                        gapi.auth.authorize(p, function (authResult) {
-                                            if (authResult && !authResult.error) {
-                                                gd_loginexp = (new Date()).getTime() + parseInt(authResult.expires_in * 0.7 * 1000);
-                                                gd_btn_login(false); gd_info();
-                                                show_message("Login ok!!");
-                                                if (gd_callback) gd_callback(true);
-                                                else gd_open_state(true);
-                                            } else {
-                                                gd_btn_login(true);
-                                                show_message("Login failed!!");
-                                            }
-                                        });
-                                    }
-                                    function gd_login(callback, react) {
-                                        if (gd_loginexp == 0 || gd_loginexp < (new Date()).getTime()) {
-                                        } else {
-                                            callback(true);
-                                            return;
-                                        }
-                                        var p = { 'client_id': CLIENT_ID, 'scope': SCOPES.join(' '), 'immediate': true };
-                                        if (gd_userId) { p['login_hint'] = gd_userId; p['authuser'] = -1; }
-                                        gapi.auth.authorize(p, function (authResult) {
-                                            if (authResult && !authResult.error) {
-                                                gd_loginexp = (new Date()).getTime() + parseInt(authResult.expires_in * 0.7 * 1000);
-                                                gd_btn_login(false); gd_info();
-                                                callback(true);
-                                            } else {
-                                                show_message("Login failed!!");
-                                                gd_btn_login(true);
-                                                callback(false);
-                                                if (react) gd_callback = callback;
-                                                else gd_callback = null;
-                                            }
-                                        });
-                                    }
-
-                                    function gd_loadpicker() {
-                                        gapi.load('picker', {
-                                            'callback': function () {
-                                                gd_pickerloaded = true;
-                                            }
-                                        });
-                                    }
-                                    function gd_createpicker() {
-                                        var access_token = gapi.auth.getToken().access_token;
-                                        if (!access_token) {
-                                            alert('Error!! No access token.');
-                                            return;
-                                        }
-                                        if (!gd_picker) {
-                                            //var view = new google.picker.View(google.picker.ViewId.DOCS);
-                                            //view.setMimeTypes("application/zip");
-                                            var view2 = new google.picker.DocsView(google.picker.ViewId.DOCS);
-                                            if (gd_mimetype) view2.setMimeTypes(gd_mimetype);
-                                            view2.setMode(google.picker.DocsViewMode.LIST);
-
-                                            var view4 = new google.picker.DocsView();
-                                            view4.setIncludeFolders(true);
-                                            view4.setSelectFolderEnabled(true);
-                                            view4.setParent("root");
-                                            view4.setMimeTypes(gd_mimetype);
-                                            view4.setMode(google.picker.DocsViewMode.LIST);
-                                            var view5 = new google.picker.View(google.picker.ViewId.RECENTLY_PICKED);
-
-                                            gd_picker = new google.picker.PickerBuilder()
-                                                //.enableFeature(google.picker.Feature.NAV_HIDDEN)
-                                                //.enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
-                                                .setAppId(CLIENT_ID.split("-")[0])
-                                                .setLocale(window.navigator.language || window.navigator.userLanguage || "en") //window.navigator.language || window.navigator.userLanguage || "en"
-                                                .setTitle("Select a file or folder")
-                                                .setOAuthToken(access_token)
-                                                .addView(view2)
-                                                .addView(view4)
-                                                .addView(view5)
-                                                .addView(new google.picker.DocsUploadView())
-                                                .setDeveloperKey(gd_developerKey)
-                                                .setCallback(gd_pickercallback)
-                                                .build();
-                                        }
-                                        gd_picker.setVisible(true);
-                                    }
-                                    function gd_pickercallback(data) {
-                                        if (data.action == google.picker.Action.PICKED) {
-                                            //console.log(data);
-                                            if (data.docs && data.docs.length > 0 && data.docs[0].id) {
-                                                var fileId = data.docs[0].id;
-                                                gd_loadfile(fileId);
-                                            }
-                                        }
-                                    }
-
-                                    var gexportlist = [];
-                                    function gd_loadfile(fileId, fromstate) {
-                                        if (gd_isdownloading) {
-                                            alert("It's downloading. Please try again in a few minutes. or Cancel the current download.");
-                                            return;
-                                        }
-                                        proc_show("section_drive", _getid('a_drive'));
-                                        _getid("gd_container").style.display = '';
-                                        _getid("downlink").innerHTML = "<table><tr><td><div id='gd_progress'>Ready...</div></table>";
-                                        gapi.client.load('drive', 'v2', function () {
-                                            var request = gapi.client.drive.files.get({
-                                                'fileId': fileId
-                                            });
-                                            request.execute(function (resp) {
-                                                function end() {
-                                                    gd_isdownloading = false;
-                                                    clearTimeout(messagetimer);
-                                                    hide_message();
-                                                    var a = _getid("downlink");
-                                                    if (a.innerHTML && a.innerHTML.indexOf("adownlink") < 0) {
-                                                        _getid("downlink").innerHTML = '';
-                                                    }
+                                            function setdown(url) {
+                                                var s, s1;
+                                                if (resp.title) {
+                                                    s = resp.title || '';
+                                                    s1 = resp.title || '';
+                                                } else {
+                                                    s = 'No Name';
+                                                    s1 = s;
                                                 }
-                                                function error(s) {
-                                                    alert(s);
-                                                }
-                                                //console.log(resp);
+                                                proc_setvalue(s, resp);
 
-                                                if (resp.mimeType == 'application/vnd.google-apps.folder') {
-                                                    end();
-                                                    var s = resp.title || 'No Name';
-                                                    _getid("downlink").innerHTML = 'Folder: <a id="adownlink" style="font-size:17px" href="' + gd_weburl() + '#folders/' + resp.id + '" data="' + resp.id + '" onclick="gd_clickweburl(this)" target="_blank">Show this folder</a>&nbsp; ';
-                                                    //<a href="#" onclick="gd_msgclear();return false;">Close</a> '+"";
-                                                    _getid("msg").innerHTML = html_entity_encode(s);
-                                                    proc_setvalue(s, resp);
-                                                    return;
-                                                }
+                                                gresp = resp;
+                                                var vlink = '';
+                                                if (resp.alternateLink || resp.webContentLink) vlink = '<a href="#" onclick="proc_gview();return false" title="View this file">View</a>&nbsp; <a href="' + (resp.alternateLink || resp.webContentLink) + '" target="_blank" title="View or Edit this file in new window">New</a>&nbsp; ';
 
-                                                var accessToken = gapi.auth.getToken().access_token;
-                                                if (!accessToken) {
-                                                    end();
-                                                    alert('Error!! No access token.');
-                                                    return;
-                                                }
-                                                var downloadurl;
-                                                if (resp.downloadUrl) {
-                                                    downloadurl = resp.downloadUrl;
-                                                    go();
-                                                } else if (resp.exportLinks) {
-                                                    /*for (x in resp.exportLinks){	
-                                                        for(var i = 0; i < gd_export_extension.length; i++){    
-                                                            if(x.toLowerCase().indexOf(gd_export_extension[i])>=0){
-                                                                downloadurl=resp.exportLinks[x];
-                                                                resp.fileExtension=gd_export_extension[i];
-                                                                break;
-                                                            }						
-                                                        }					
-                                                        if(downloadurl)break;
-                                                    }*/
-
-                                                    gexportlist = [];
-                                                    for (x in resp.exportLinks) {
-                                                        var a = {};
-                                                        a.title = resp.title;
-                                                        a.name = x;
-                                                        a.url = (resp.exportLinks[x] || '') + '&access_token=' + encodeURIComponent(accessToken);
-                                                        var match = a.url.match(/(exportFormat=|format=)(.*?)(&|$)/i);
-                                                        if (match) a.ext = match[2];
-                                                        gexportlist.push(a);
-                                                    }
-                                                    if (gexportlist.length > 0) downloadurl = "ok.html";
-                                                    go();
-
-                                                } else { go(); }
-
-                                                function go() {
-                                                    if (downloadurl) {
-                                                        function getsize() {
-                                                            function humanFileSize(bytes) {
-                                                                var thresh = 1024;
-                                                                if (bytes < thresh) return bytes + ' B';
-                                                                var units = ['kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-                                                                var u = -1;
-                                                                do {
-                                                                    bytes /= thresh;
-                                                                    ++u;
-                                                                } while (bytes >= thresh);
-                                                                return bytes.toFixed(1) + ' ' + units[u];
-                                                            }
-                                                            var s;
-                                                            if (!resp.fileSize) s = ' (Unknown Size)';
-                                                            else s = ' (' + humanFileSize(resp.fileSize) + ')';
-                                                            return s;
+                                                if (resp.exportLinks) {
+                                                    var prefer = getstorage('c_prefer_ext');
+                                                    s = '<select id="adownsel" style="width:420px;margin-bottom:1px">';
+                                                    for (var i = 0; i < gexportlist.length; i++) {
+                                                        s += '<option value="' + i + '"';
+                                                        if (gexportlist[i].ext) {
+                                                            if (gexportlist[i].ext == prefer) s += ' selected';
+                                                            s += '>(.' + gexportlist[i].ext + ') ';
+                                                        } else {
+                                                            s += '>';
                                                         }
-                                                        function setdown(url) {
-                                                            var s, s1;
-                                                            if (resp.title) {
-                                                                s = resp.title || '';
-                                                                s1 = resp.title || '';
-                                                            } else {
-                                                                s = 'No Name';
-                                                                s1 = s;
-                                                            }
-                                                            proc_setvalue(s, resp);
+                                                        s += gexportlist[i].name;
+                                                    }
+                                                    s += '</select><br><a id="adownlink" style="font-size:17px;display:none">Download this file</a>&nbsp; ';
+                                                    if (vlink) s += vlink;
+                                                    //s+='<a href="#" onclick="gd_msgclear();return false;">Close</a> &nbsp;Export from Google document format.';
 
-                                                            gresp = resp;
-                                                            var vlink = '';
-                                                            if (resp.alternateLink || resp.webContentLink) vlink = '<a href="#" onclick="proc_gview();return false" title="View this file">View</a>&nbsp; <a href="' + (resp.alternateLink || resp.webContentLink) + '" target="_blank" title="View or Edit this file in new window">New</a>&nbsp; ';
-
-                                                            if (resp.exportLinks) {
-                                                                var prefer = getstorage('c_prefer_ext');
-                                                                s = '<select id="adownsel" style="width:420px;margin-bottom:1px">';
-                                                                for (var i = 0; i < gexportlist.length; i++) {
-                                                                    s += '<option value="' + i + '"';
-                                                                    if (gexportlist[i].ext) {
-                                                                        if (gexportlist[i].ext == prefer) s += ' selected';
-                                                                        s += '>(.' + gexportlist[i].ext + ') ';
-                                                                    } else {
-                                                                        s += '>';
-                                                                    }
-                                                                    s += gexportlist[i].name;
-                                                                }
-                                                                s += '</select><br><a id="adownlink" style="font-size:17px;display:none">Download this file</a>&nbsp; ';
-                                                                if (vlink) s += vlink;
-                                                                //s+='<a href="#" onclick="gd_msgclear();return false;">Close</a> &nbsp;Export from Google document format.';
-
-                                                                _getid("downlink").innerHTML = s;
-                                                                var a = _getid("adownsel");
-                                                                if (a) {
-                                                                    a.onchange = function () {
-                                                                        if (!this.value) return;
-                                                                        var d = gexportlist[this.value];
-                                                                        if (!d) return;
-                                                                        setstorage('c_prefer_ext', d.ext);
-                                                                        var a = _getid("adownlink");
-                                                                        if (a) {
-                                                                            a.href = d.url;
-                                                                            var s = d.title || '';
-                                                                            if (d.ext) s += '.' + d.ext;
-                                                                            a.download = s;
-                                                                            a.title = s;
-                                                                            a.style.display = '';
-                                                                            _getid("msg").innerHTML = html_entity_encode(s);
-                                                                        }
-                                                                    }
-                                                                    a.onchange();
-                                                                }
-                                                                return;
-                                                            }
-
-                                                            s1 = '<a id="adownlink" style="font-size:17px">Download this file</a>' + getsize() + '&nbsp; ';
-                                                            if (vlink) s1 += vlink;
-                                                            //s1+='<a href="#" onclick="gd_msgclear();return false;">Close</a> '+"";
-                                                            _getid("downlink").innerHTML = s1;
+                                                    _getid("downlink").innerHTML = s;
+                                                    var a = _getid("adownsel");
+                                                    if (a) {
+                                                        a.onchange = function () {
+                                                            if (!this.value) return;
+                                                            var d = gexportlist[this.value];
+                                                            if (!d) return;
+                                                            setstorage('c_prefer_ext', d.ext);
                                                             var a = _getid("adownlink");
                                                             if (a) {
-                                                                a.href = (resp.downloadUrl && resp.webContentLink) || url;
+                                                                a.href = d.url;
+                                                                var s = d.title || '';
+                                                                if (d.ext) s += '.' + d.ext;
                                                                 a.download = s;
                                                                 a.title = s;
+                                                                a.style.display = '';
                                                                 _getid("msg").innerHTML = html_entity_encode(s);
                                                             }
                                                         }
-
-                                                        gd_isdownloading = true;
-                                                        _getid("downlink").innerHTML = "<table><tr><td><img src='http://atomurl.net/img/wait.gif' align='absmiddle'><td><div id='gd_progress'>Downloading...</div></table>";
-                                                        setTimeout(function () {
-                                                            end();
-                                                            setdown(downloadurl + '&access_token=' + encodeURIComponent(accessToken));
-                                                        }, 300);
-                                                    } else {
-                                                        end();
-                                                        gd_msgclear();
-                                                        if (resp.error && resp.error.message) {
-                                                            alert(resp.error.message);
-                                                        } else {
-                                                            alert('Error!! Can not find a download URL.');
-                                                        }
+                                                        a.onchange();
                                                     }
-                                                }
-                                            });
-                                        });
-                                    }
-                                    function gd_open_picker() {
-                                        if (!gd_issupported) {
-                                            alert("This browser does not support.");
-                                            return;
-                                        }
-                                        if (!gd_loaded || !gd_pickerloaded) {
-                                            if (!gd_load_timer) gd_loadscript(gd_open_picker);
-                                            else alert('Not loaded library. Please try again in a few minutes.');
-                                            return;
-                                        }
-                                        gd_login(function (result) {
-                                            if (!result) return;
-                                            gd_createpicker();
-                                        }, true);
-                                    }
-                                    function gd_getparam(s, name) {
-                                        name = name + "=";
-                                        name = name.toLowerCase();
-                                        var p1 = s.toLowerCase().indexOf(name);
-                                        if (p1 < 0) return "";
-                                        s = s.substr(p1 + name.length);
-                                        var p2 = s.toLowerCase().indexOf("&");
-                                        if (p2 >= 0) {
-                                            return s.substr(0, p2);
-                                        } else {
-                                            return s;
-                                        }
-                                    }
-                                    function gd_open_state(force) {
-                                        var s = gd_state;
-                                        if (s) {
-                                            if (!gd_issupported) {
-                                                gd_state = '';
-                                                alert("This browser does not support.");
-                                                return;
-                                            }
-                                            s = decodeURIComponent(s);
-                                            try {
-                                                var a = JSON.parse(s);
-                                                var fileId;
-                                                if (a.ids) fileId = a.ids[0];
-                                                if (!fileId && a.exportIds) fileId = a.exportIds[0];
-                                                //if(!fileId && a.folderId && a.action!='create') fileId=a.folderId;			
-                                                if (fileId) {
-                                                    gd_login(function (result) {
-                                                        if (gd_open2 && !force) return;
-                                                        gd_open2 = true;
-                                                        if (!result) return;
-                                                        //_getid('gd_btn_reopen').style.display='';
-                                                        gd_state = '';
-                                                        gd_loadfile(fileId, true);
-                                                    });
-                                                }
-                                            } catch (err) {
-                                            }
-                                        }
-                                    }
-                                    function gd_clientload() {
-                                        gd_loaded = true;
-                                        if (window.addEventListener) {
-                                            window.addEventListener("resize", gd_btn_login2, false);
-                                        } else if (window.attachEvent) {
-                                            window.attachEvent("onresize", gd_btn_login2);
-                                        }
-                                        gd_open_state();
-                                    }
-                                    var gd_open2;
-                                    function gd_open_state2() {
-                                        setTimeout(function () {
-                                            if (!gd_open2) gd_open_state();
-                                        }, 1000);
-                                    }
-
-                                    function gd_loadscript(callback) {
-                                        function inject(s) {
-                                            var o = document.createElement('scri' + 'pt');
-                                            o.setAttribute('src', s);
-                                            o.setAttribute('type', 'text/javascript');
-                                            document.body.appendChild(o);
-                                        }
-                                        if (gd_load_timer) return;
-                                        if (gd_loaded && gd_pickerloaded) return;
-                                        gd_load_timer = setInterval(function () {
-                                            if (gd_loaded && gd_pickerloaded) {
-                                                clearInterval(gd_load_timer);
-                                                if (callback) callback();
-                                            }
-                                        }, 100);
-                                        inject('../../apis.google.com/js/clientc0c4.js?onload=gd_clientload');
-                                        inject('../../apis.google.com/js/api825b.js?onload=gd_loadpicker');
-                                    }
-
-                                    function gd_dblclick() {
-                                        function dblclick() {
-                                            try {
-                                                if (gd_picker) gd_picker.setVisible(false);
-                                            } catch (err) { }
-                                        }
-                                        function keydown(e) {
-                                            if (!e) e = window.event;
-                                            if (e && e.keyCode == 27) {
-                                                dblclick();
-                                                proc_rssclose();
-                                            }
-                                        }
-                                        if (window.addEventListener) {
-                                            document.addEventListener("dblclick", dblclick, false);
-                                            document.addEventListener("keydown", keydown, false);
-                                        } else if (window.attachEvent) {
-                                            document.attachEvent("ondblclick", dblclick);
-                                            document.attachEvent("onkeydown", keydown);
-                                        }
-                                        document.documentElement.onmouseup = function (e) {
-                                            if (!e) e = event;
-                                            if (e.button != 0 && e.button != 1) return;
-                                            var w = getWindowWidth() - 27;
-                                            var h = getWindowHeight() - 27;
-                                            if (e.clientX > w || e.clientY > h) return;
-                                            var b2;
-                                            if (e.target) b2 = e.target;
-                                            else if (e.srcElement) b2 = e.srcElement;
-                                            if (b2.tagName == 'A' || b2.tagName == 'SPAN') return;
-                                            while (b2) {
-                                                if (b2.id == "rssviewer" || b2.id == "imgrss") {
                                                     return;
                                                 }
-                                                if (b2 == document.body) break;
-                                                if (b2.parentElement) b2 = b2.parentElement;
-                                                else b2 = b2.parentNode;
-                                            }
-                                            proc_rssclose();
-                                        }
-                                    }
-                                    var gd_userId, gd_email;
-                                    function gd_weburl() {
-                                        var s;
-                                        if (gd_email) s = 'https://drive.google.com/?authuser=' + encodeURIComponent(gd_email);
-                                        else s = 'https://drive.google.com/';
-                                        return s;
-                                    }
-                                    function gd_clickweburl(f) {
-                                        f.href = gd_weburl() + '#folders/' + f.getAttribute("data");
-                                    }
-                                    function gd_info() {
-                                        if (gd_email) return;
-                                        gapi.client.load('drive', 'v2', function () {
-                                            var request = gapi.client.drive.about.get();
-                                            request.execute(function (resp) {
-                                                if (resp && resp.user) {
-                                                    if (gd_email) return;
-                                                    gd_email = resp.user.emailAddress;
-                                                    if (gd_email) {
-                                                        var a = _getid('btn_open');
-                                                        var b = _getid('gd_btn_reopen');
-                                                        if (a) a.title = a.title + ' (' + gd_email + ')';
-                                                        if (b) b.title = b.title + ' (' + gd_email + ')';
-                                                    }
-                                                }
-                                            });
-                                        });
-                                    }
-                                    function gd_init() {
-                                        gd_dblclick();
-                                        gd_state2 = gd_state;
-                                        if (!window.XMLHttpRequest) {//!window.FileReader || !window.URL ||
-                                        } else {
-                                            gd_issupported = true;
-                                            if (gd_state) {
-                                                try {
-                                                    var a = JSON.parse(gd_state);
-                                                    gd_userId = a.userId;
-                                                    if (a.ids || a.exportIds) {//|| (a.folderId && a.action!='create')
-                                                        _getid("gd_container").style.display = '';
-                                                        _getid("downlink").innerHTML = "<table><tr><td><div id='gd_progress'>Ready...</div></table>";
-                                                        gd_loadscript();
-                                                        proc_show("section_drive", _getid('a_drive'));
-                                                    }
-                                                } catch (err) { }
-                                                if (window.addEventListener) window.addEventListener("load", gd_open_state2, false);
-                                                else if (window.attachEvent) window.attachEvent("onload", gd_open_state2);
-                                            } else {
-                                                gd_loadscript();
-                                            }
-                                        }
-                                    }
-                                    init();
-                                    gd_init();
 
-                                    var gd_resp, gd_uniqid;
-                                    function gd_msgclear() {
-                                        _getid("gd_container").style.display = 'none';
-                                        _getid("btn_share").disabled = true;
-                                        _getid("btn_unshare").disabled = true;
-                                    }
-                                    function proc_setvalue(s, resp) {
-                                        //console.log(resp);
-                                        if (resp.exportLinks) resp.isexportLinks = true;
-                                        var link2 = '';
-                                        var m = resp.mimeType;
-                                        if (resp.shared) {
-                                            if (m == 'application/vnd.google-apps.folder') {
-                                                link2 = 'https://drive.google.com/folderview?id=' + resp.id + '&usp=sharing';
-                                            } else {
-                                                link2 = 'https://drive.google.com/file/d/' + resp.id + '/view?usp=sharing';
-                                                if (resp.isexportLinks) {
-                                                    if (m.indexOf('vnd.google-apps.document') >= 0) {
-                                                        link2 = 'https://docs.google.com/document/d/' + resp.id + '/edit?usp=sharing';
-                                                    } else if (m.indexOf('vnd.google-apps.spreadsheet') >= 0) {
-                                                        link2 = 'https://docs.google.com/spreadsheets/d/' + resp.id + '/edit?usp=sharing';
-                                                    } else if (m.indexOf('vnd.google-apps.presentation') >= 0) {
-                                                        link2 = 'https://docs.google.com/presentation/d/' + resp.id + '/edit?usp=sharing';
-                                                    } else if (m.indexOf('vnd.google-apps.drawing') >= 0) {
-                                                        link2 = 'https://docs.google.com/drawings/d/' + resp.id + '/edit?usp=sharing';
-                                                    }
-                                                }
-                                            }
-                                            //if(link2) _getid("downlink2").innerHTML='&nbsp;<a href="'+link2+'" target="_blank">Open Share Link</a>';
-                                        }
-                                        gd_resp = resp;
-                                        _getid("txtshareurl").value = link2;
-                                        if (link2) _getid("txtsharelink").innerHTML = '<a href="' + link2 + '" target="_blank" title="Open this share link">Sharing URL</a>';
-                                        else _getid("txtsharelink").innerHTML = 'Sharing URL';
-                                        _getid("txtshareurl").disabled = !resp.shared;
-                                        var a = _getid("btn_share");
-                                        a.disabled = resp.shared;
-                                        _getid("btn_unshare").disabled = !resp.shared;
-                                        if (m == 'application/vnd.google-apps.folder') a.innerHTML = 'Share this folder';
-                                        else a.innerHTML = 'Share this file';
-
-                                        _getid('btn_dialog').disabled = false;
-                                        _getid('btn_refresh').disabled = false;
-                                    }
-                                    function attach_shareall(shared) {
-                                        gd_login(function (result) {
-                                            if (!result) return;
-                                            attach_shareall2(shared);
-                                        }, true);
-                                    }
-                                    function attach_shareall2(shared) {
-                                        if (!gd_resp) {
-                                            alert('No selected file.');
-                                            return;
-                                        }
-                                        if (gd_resp.mimeType == "application/vnd.google-apps.folder") {
-                                            if (!_getid('btn_dialog').disabled) attach_dialog();
-                                            return;
-                                        }
-                                        var gd_resp2 = {};
-                                        gd_resp2.id = gd_resp.id;
-                                        gd_resp2.title = gd_resp.title;
-                                        gd_resp2.isexportLinks = gd_resp.isexportLinks;
-                                        gd_resp2.mimeType = gd_resp.mimeType;
-
-                                        gd_uniqid = (new Date()).getTime();
-                                        var uniqid = gd_uniqid;
-
-                                        function end() {
-                                            if (gd_uniqid != uniqid) return;
-                                            gd_isdownloading = false;
-                                            var a = _getid("downlink2");
-                                            if (a.innerHTML) {
-                                                var a = _getid("gd_wait2");
-                                                if (a && !canceled) {
-                                                    a.style.display = 'none';
-                                                } else {
-                                                    _getid("downlink2").innerHTML = "";
-                                                }
-                                            }
-                                        }
-
-                                        var canceled = false;
-                                        _getid("downlink2").innerHTML = "<table><tr><td><img id='gd_wait2' src='http://atomurl.net/img/wait.gif' align='absmiddle'><td><div id='gd_progress2'>&nbsp;</div></table>";
-                                        gd_isdownloading = true;
-
-                                        function get(idx) {
-                                            var fileId = gd_resp2.id;
-
-                                            function _progress(s) {
-                                                if (gd_uniqid != uniqid) return;
-                                                var a = _getid("gd_progress2");
+                                                s1 = '<a id="adownlink" style="font-size:17px">Download this file</a>' + getsize() + '&nbsp; ';
+                                                if (vlink) s1 += vlink;
+                                                //s1+='<a href="#" onclick="gd_msgclear();return false;">Close</a> '+"";
+                                                _getid("downlink").innerHTML = s1;
+                                                var a = _getid("adownlink");
                                                 if (a) {
-                                                    a.innerHTML = '<span id="gd_progress3" style="color:green">' + s + '</span>';
-                                                    _getid("gd_progress3").title = gd_resp2.title;
+                                                    a.href = (resp.downloadUrl && resp.webContentLink) || url;
+                                                    a.download = s;
+                                                    a.title = s;
+                                                    _getid("msg").innerHTML = html_entity_encode(s);
                                                 }
                                             }
-                                            function _shared() {
-                                                if (gd_uniqid != uniqid) return;
-                                                var m = gd_resp2.mimeType;
-                                                if (m == 'application/vnd.google-apps.folder') {
-                                                    link2 = 'https://drive.google.com/folderview?id=' + gd_resp2.id + '&usp=sharing';
-                                                } else {
-                                                    var link2 = 'https://drive.google.com/file/d/' + gd_resp2.id + '/view?usp=sharing';
-                                                    if (gd_resp2.isexportLinks) {
-                                                        if (m.indexOf('vnd.google-apps.document') >= 0) {
-                                                            link2 = 'https://docs.google.com/document/d/' + gd_resp2.id + '/edit?usp=sharing';
-                                                        } else if (m.indexOf('vnd.google-apps.spreadsheet') >= 0) {
-                                                            link2 = 'https://docs.google.com/spreadsheets/d/' + gd_resp2.id + '/edit?usp=sharing';
-                                                        } else if (m.indexOf('vnd.google-apps.presentation') >= 0) {
-                                                            link2 = 'https://docs.google.com/presentation/d/' + gd_resp2.id + '/edit?usp=sharing';
-                                                        } else if (m.indexOf('vnd.google-apps.drawing') >= 0) {
-                                                            link2 = 'https://docs.google.com/drawings/d/' + gd_resp2.id + '/edit?usp=sharing';
-                                                        }
-                                                    }
-                                                }
-                                                _progress('Shared. <a href="' + link2 + '" target="_blank">Open Share Link</a>');
-                                                _control(true, link2);
-                                            }
-                                            function _control(shared, link2) {
-                                                if (gd_uniqid != uniqid) return;
+
+                                            gd_isdownloading = true;
+                                            _getid("downlink").innerHTML = "<table><tr><td><img src='http://atomurl.net/img/wait.gif' align='absmiddle'><td><div id='gd_progress'>Downloading...</div></table>";
+                                            setTimeout(function () {
                                                 end();
-                                                if (gd_resp2.id != gd_resp.id) return;
-                                                _getid("txtshareurl").value = link2 || '';
-                                                if (link2) _getid("txtsharelink").innerHTML = '<a href="' + link2 + '" target="_blank" title="Open this share link">Sharing URL</a>';
-                                                else _getid("txtsharelink").innerHTML = 'Sharing URL';
-                                                _getid("txtshareurl").disabled = !shared;
-                                                _getid("btn_share").disabled = shared;
-                                                _getid("btn_unshare").disabled = !shared;
+                                                setdown(downloadurl + '&access_token=' + encodeURIComponent(accessToken));
+                                            }, 300);
+                                        } else {
+                                            end();
+                                            gd_msgclear();
+                                            if (resp.error && resp.error.message) {
+                                                alert(resp.error.message);
+                                            } else {
+                                                alert('Error!! Can not find a download URL.');
                                             }
-                                            function _touch() {
-                                                var request = gapi.client.drive.files.touch({
-                                                    'fileId': fileId
-                                                });
-                                                request.execute(function (resp) {
-                                                });
-                                            }
-                                            _progress('Changing Permission...');
-
-                                            if (gd_resp.userPermission && gd_resp.userPermission.role != 'owner') {
-                                                _progress('You have no permission for this file.');
-                                                end();
-                                                return;
-                                            }
-
-                                            var request = gapi.client.drive.permissions.list({
-                                                'fileId': fileId
-                                            });
-                                            request.execute(function (resp) {
-                                                if (gd_uniqid != uniqid) return;
-                                                //console.log(resp.items);
-                                                if (!resp || !resp.items) {
-                                                    _progress('Error!! Check the file, folder is valid.');
-                                                    end();
-                                                    return;
-                                                }
-
-                                                var isexist;
-                                                if (shared) {
-                                                    for (var i = 0; i <= resp.items.length - 1; i++) {
-                                                        if (resp.items[i].role == 'reader' && resp.items[i].type == 'anyone' && resp.items[i].withLink) { //resp.items[i].id=='anyoneWithLink' 
-                                                            isexist = true;
-                                                            _shared();
-                                                            break;
-                                                        }
-                                                    }
-
-                                                    if (!isexist) {
-                                                        var body = {
-                                                            'value': '', 'type': 'anyone', 'role': 'reader', 'withLink': true
-                                                        };
-                                                        var request = gapi.client.drive.permissions.insert({
-                                                            'fileId': fileId,
-                                                            'resource': body
-                                                        });
-                                                        request.execute(function (resp) {
-                                                            if (resp && resp.role == 'reader' && resp.type == 'anyone' && resp.withLink) {
-                                                                _shared();
-                                                                _touch();
-                                                            } else {
-                                                                var s = 'Share Failed. ';
-                                                                if (resp && resp.error && resp.error.message) s += resp.error.message;
-                                                                _progress(henc(s), 'error');
-                                                                end();
-                                                            }
-                                                        });
-                                                    }
-
-                                                } else {
-                                                    var oshare;
-                                                    for (var i = 0; i <= resp.items.length - 1; i++) {
-                                                        //if(resp.items[i].role=='reader' && resp.items[i].type=='anyone' && resp.items[i].withLink){ 
-                                                        if (resp.items[i].type == 'anyone') {
-                                                            if (resp.items[i].withLink) {
-                                                                isexist = true;
-                                                                var request = gapi.client.drive.permissions['delete']({
-                                                                    'fileId': fileId,
-                                                                    'permissionId': resp.items[i].id
-                                                                });
-                                                                request.execute(function (resp) {
-                                                                    if (resp && resp.error) {
-                                                                        var s = 'Error. ';
-                                                                        if (resp.error.message) s += resp.error.message;
-                                                                        _progress(henc(s), 'error');
-                                                                        end();
-                                                                    } else {
-                                                                        if (oshare) _progress('Unshared. Other share permissions seems to remain.');
-                                                                        else _progress('UnShared.');
-                                                                        _control(false);
-                                                                        _touch();
-                                                                    }
-                                                                });
-                                                            } else {
-                                                                oshare = true;
-                                                            }
-                                                        } else if (!(resp.items[i].type == 'user' && resp.items[i].role == 'owner')) {
-                                                            oshare = true;
-                                                        }
-                                                    }
-                                                    if (!isexist) {
-                                                        if (oshare) _progress('Unshared. Other share permissions seems to remain.');
-                                                        else _progress('UnShared.');
-                                                        _control(false);
-                                                    }
-                                                }
-
-                                            });
                                         }
-
-                                        gapi.client.load('drive', 'v2', function () {
-                                            get(0);
+                                    }
+                                });
+                            });
+                        }
+                        function gd_open_picker() {
+                            if (!gd_issupported) {
+                                alert("This browser does not support.");
+                                return;
+                            }
+                            if (!gd_loaded || !gd_pickerloaded) {
+                                if (!gd_load_timer) gd_loadscript(gd_open_picker);
+                                else alert('Not loaded library. Please try again in a few minutes.');
+                                return;
+                            }
+                            gd_login(function (result) {
+                                if (!result) return;
+                                gd_createpicker();
+                            }, true);
+                        }
+                        function gd_getparam(s, name) {
+                            name = name + "=";
+                            name = name.toLowerCase();
+                            var p1 = s.toLowerCase().indexOf(name);
+                            if (p1 < 0) return "";
+                            s = s.substr(p1 + name.length);
+                            var p2 = s.toLowerCase().indexOf("&");
+                            if (p2 >= 0) {
+                                return s.substr(0, p2);
+                            } else {
+                                return s;
+                            }
+                        }
+                        function gd_open_state(force) {
+                            var s = gd_state;
+                            if (s) {
+                                if (!gd_issupported) {
+                                    gd_state = '';
+                                    alert("This browser does not support.");
+                                    return;
+                                }
+                                s = decodeURIComponent(s);
+                                try {
+                                    var a = JSON.parse(s);
+                                    var fileId;
+                                    if (a.ids) fileId = a.ids[0];
+                                    if (!fileId && a.exportIds) fileId = a.exportIds[0];
+                                    //if(!fileId && a.folderId && a.action!='create') fileId=a.folderId;			
+                                    if (fileId) {
+                                        gd_login(function (result) {
+                                            if (gd_open2 && !force) return;
+                                            gd_open2 = true;
+                                            if (!result) return;
+                                            //_getid('gd_btn_reopen').style.display='';
+                                            gd_state = '';
+                                            gd_loadfile(fileId, true);
                                         });
                                     }
-                                    var share2;
-                                    function attach_dialog() {
-                                        if (!gd_resp) return;
-                                        function go() {
-                                            if (!share2) {
-                                                var appId = CLIENT_ID.split("-")[0];
-                                                share2 = new gapi.drive.share.ShareClient(appId);
+                                } catch (err) {
+                                }
+                            }
+                        }
+                        function gd_clientload() {
+                            gd_loaded = true;
+                            if (window.addEventListener) {
+                                window.addEventListener("resize", gd_btn_login2, false);
+                            } else if (window.attachEvent) {
+                                window.attachEvent("onresize", gd_btn_login2);
+                            }
+                            gd_open_state();
+                        }
+                        var gd_open2;
+                        function gd_open_state2() {
+                            setTimeout(function () {
+                                if (!gd_open2) gd_open_state();
+                            }, 1000);
+                        }
+
+                        function gd_loadscript(callback) {
+                            function inject(s) {
+                                var o = document.createElement('scri' + 'pt');
+                                o.setAttribute('src', s);
+                                o.setAttribute('type', 'text/javascript');
+                                document.body.appendChild(o);
+                            }
+                            if (gd_load_timer) return;
+                            if (gd_loaded && gd_pickerloaded) return;
+                            gd_load_timer = setInterval(function () {
+                                if (gd_loaded && gd_pickerloaded) {
+                                    clearInterval(gd_load_timer);
+                                    if (callback) callback();
+                                }
+                            }, 100);
+                            inject('../../apis.google.com/js/clientc0c4.js?onload=gd_clientload');
+                            inject('../../apis.google.com/js/api825b.js?onload=gd_loadpicker');
+                        }
+
+                        function gd_dblclick() {
+                            function dblclick() {
+                                try {
+                                    if (gd_picker) gd_picker.setVisible(false);
+                                } catch (err) { }
+                            }
+                            function keydown(e) {
+                                if (!e) e = window.event;
+                                if (e && e.keyCode == 27) {
+                                    dblclick();
+                                    proc_rssclose();
+                                }
+                            }
+                            if (window.addEventListener) {
+                                document.addEventListener("dblclick", dblclick, false);
+                                document.addEventListener("keydown", keydown, false);
+                            } else if (window.attachEvent) {
+                                document.attachEvent("ondblclick", dblclick);
+                                document.attachEvent("onkeydown", keydown);
+                            }
+                            document.documentElement.onmouseup = function (e) {
+                                if (!e) e = event;
+                                if (e.button != 0 && e.button != 1) return;
+                                var w = getWindowWidth() - 27;
+                                var h = getWindowHeight() - 27;
+                                if (e.clientX > w || e.clientY > h) return;
+                                var b2;
+                                if (e.target) b2 = e.target;
+                                else if (e.srcElement) b2 = e.srcElement;
+                                if (b2.tagName == 'A' || b2.tagName == 'SPAN') return;
+                                while (b2) {
+                                    if (b2.id == "rssviewer" || b2.id == "imgrss") {
+                                        return;
+                                    }
+                                    if (b2 == document.body) break;
+                                    if (b2.parentElement) b2 = b2.parentElement;
+                                    else b2 = b2.parentNode;
+                                }
+                                proc_rssclose();
+                            }
+                        }
+                        var gd_userId, gd_email;
+                        function gd_weburl() {
+                            var s;
+                            if (gd_email) s = 'https://drive.google.com/?authuser=' + encodeURIComponent(gd_email);
+                            else s = 'https://drive.google.com/';
+                            return s;
+                        }
+                        function gd_clickweburl(f) {
+                            f.href = gd_weburl() + '#folders/' + f.getAttribute("data");
+                        }
+                        function gd_info() {
+                            if (gd_email) return;
+                            gapi.client.load('drive', 'v2', function () {
+                                var request = gapi.client.drive.about.get();
+                                request.execute(function (resp) {
+                                    if (resp && resp.user) {
+                                        if (gd_email) return;
+                                        gd_email = resp.user.emailAddress;
+                                        if (gd_email) {
+                                            var a = _getid('btn_open');
+                                            var b = _getid('gd_btn_reopen');
+                                            if (a) a.title = a.title + ' (' + gd_email + ')';
+                                            if (b) b.title = b.title + ' (' + gd_email + ')';
+                                        }
+                                    }
+                                });
+                            });
+                        }
+                        function gd_init() {
+                            gd_dblclick();
+                            gd_state2 = gd_state;
+                            if (!window.XMLHttpRequest) {//!window.FileReader || !window.URL ||
+                            } else {
+                                gd_issupported = true;
+                                if (gd_state) {
+                                    try {
+                                        var a = JSON.parse(gd_state);
+                                        gd_userId = a.userId;
+                                        if (a.ids || a.exportIds) {//|| (a.folderId && a.action!='create')
+                                            _getid("gd_container").style.display = '';
+                                            _getid("downlink").innerHTML = "<table><tr><td><div id='gd_progress'>Ready...</div></table>";
+                                            gd_loadscript();
+                                            proc_show("section_drive", _getid('a_drive'));
+                                        }
+                                    } catch (err) { }
+                                    if (window.addEventListener) window.addEventListener("load", gd_open_state2, false);
+                                    else if (window.attachEvent) window.attachEvent("onload", gd_open_state2);
+                                } else {
+                                    gd_loadscript();
+                                }
+                            }
+                        }
+                        init();
+                        gd_init();
+
+                        var gd_resp, gd_uniqid;
+                        function gd_msgclear() {
+                            _getid("gd_container").style.display = 'none';
+                            _getid("btn_share").disabled = true;
+                            _getid("btn_unshare").disabled = true;
+                        }
+                        function proc_setvalue(s, resp) {
+                            //console.log(resp);
+                            if (resp.exportLinks) resp.isexportLinks = true;
+                            var link2 = '';
+                            var m = resp.mimeType;
+                            if (resp.shared) {
+                                if (m == 'application/vnd.google-apps.folder') {
+                                    link2 = 'https://drive.google.com/folderview?id=' + resp.id + '&usp=sharing';
+                                } else {
+                                    link2 = 'https://drive.google.com/file/d/' + resp.id + '/view?usp=sharing';
+                                    if (resp.isexportLinks) {
+                                        if (m.indexOf('vnd.google-apps.document') >= 0) {
+                                            link2 = 'https://docs.google.com/document/d/' + resp.id + '/edit?usp=sharing';
+                                        } else if (m.indexOf('vnd.google-apps.spreadsheet') >= 0) {
+                                            link2 = 'https://docs.google.com/spreadsheets/d/' + resp.id + '/edit?usp=sharing';
+                                        } else if (m.indexOf('vnd.google-apps.presentation') >= 0) {
+                                            link2 = 'https://docs.google.com/presentation/d/' + resp.id + '/edit?usp=sharing';
+                                        } else if (m.indexOf('vnd.google-apps.drawing') >= 0) {
+                                            link2 = 'https://docs.google.com/drawings/d/' + resp.id + '/edit?usp=sharing';
+                                        }
+                                    }
+                                }
+                                //if(link2) _getid("downlink2").innerHTML='&nbsp;<a href="'+link2+'" target="_blank">Open Share Link</a>';
+                            }
+                            gd_resp = resp;
+                            _getid("txtshareurl").value = link2;
+                            if (link2) _getid("txtsharelink").innerHTML = '<a href="' + link2 + '" target="_blank" title="Open this share link">Sharing URL</a>';
+                            else _getid("txtsharelink").innerHTML = 'Sharing URL';
+                            _getid("txtshareurl").disabled = !resp.shared;
+                            var a = _getid("btn_share");
+                            a.disabled = resp.shared;
+                            _getid("btn_unshare").disabled = !resp.shared;
+                            if (m == 'application/vnd.google-apps.folder') a.innerHTML = 'Share this folder';
+                            else a.innerHTML = 'Share this file';
+
+                            _getid('btn_dialog').disabled = false;
+                            _getid('btn_refresh').disabled = false;
+                        }
+                        function attach_shareall(shared) {
+                            gd_login(function (result) {
+                                if (!result) return;
+                                attach_shareall2(shared);
+                            }, true);
+                        }
+                        function attach_shareall2(shared) {
+                            if (!gd_resp) {
+                                alert('No selected file.');
+                                return;
+                            }
+                            if (gd_resp.mimeType == "application/vnd.google-apps.folder") {
+                                if (!_getid('btn_dialog').disabled) attach_dialog();
+                                return;
+                            }
+                            var gd_resp2 = {};
+                            gd_resp2.id = gd_resp.id;
+                            gd_resp2.title = gd_resp.title;
+                            gd_resp2.isexportLinks = gd_resp.isexportLinks;
+                            gd_resp2.mimeType = gd_resp.mimeType;
+
+                            gd_uniqid = (new Date()).getTime();
+                            var uniqid = gd_uniqid;
+
+                            function end() {
+                                if (gd_uniqid != uniqid) return;
+                                gd_isdownloading = false;
+                                var a = _getid("downlink2");
+                                if (a.innerHTML) {
+                                    var a = _getid("gd_wait2");
+                                    if (a && !canceled) {
+                                        a.style.display = 'none';
+                                    } else {
+                                        _getid("downlink2").innerHTML = "";
+                                    }
+                                }
+                            }
+
+                            var canceled = false;
+                            _getid("downlink2").innerHTML = "<table><tr><td><img id='gd_wait2' src='http://atomurl.net/img/wait.gif' align='absmiddle'><td><div id='gd_progress2'>&nbsp;</div></table>";
+                            gd_isdownloading = true;
+
+                            function get(idx) {
+                                var fileId = gd_resp2.id;
+
+                                function _progress(s) {
+                                    if (gd_uniqid != uniqid) return;
+                                    var a = _getid("gd_progress2");
+                                    if (a) {
+                                        a.innerHTML = '<span id="gd_progress3" style="color:green">' + s + '</span>';
+                                        _getid("gd_progress3").title = gd_resp2.title;
+                                    }
+                                }
+                                function _shared() {
+                                    if (gd_uniqid != uniqid) return;
+                                    var m = gd_resp2.mimeType;
+                                    if (m == 'application/vnd.google-apps.folder') {
+                                        link2 = 'https://drive.google.com/folderview?id=' + gd_resp2.id + '&usp=sharing';
+                                    } else {
+                                        var link2 = 'https://drive.google.com/file/d/' + gd_resp2.id + '/view?usp=sharing';
+                                        if (gd_resp2.isexportLinks) {
+                                            if (m.indexOf('vnd.google-apps.document') >= 0) {
+                                                link2 = 'https://docs.google.com/document/d/' + gd_resp2.id + '/edit?usp=sharing';
+                                            } else if (m.indexOf('vnd.google-apps.spreadsheet') >= 0) {
+                                                link2 = 'https://docs.google.com/spreadsheets/d/' + gd_resp2.id + '/edit?usp=sharing';
+                                            } else if (m.indexOf('vnd.google-apps.presentation') >= 0) {
+                                                link2 = 'https://docs.google.com/presentation/d/' + gd_resp2.id + '/edit?usp=sharing';
+                                            } else if (m.indexOf('vnd.google-apps.drawing') >= 0) {
+                                                link2 = 'https://docs.google.com/drawings/d/' + gd_resp2.id + '/edit?usp=sharing';
                                             }
-                                            share2.setItemIds(gd_resp.id);
-                                            share2.showSettingsDialog();
                                         }
-                                        gd_login(function (result) {
-                                            if (!result) return;
-                                            gapi.load('drive-share', function () {
-                                                go();
+                                    }
+                                    _progress('Shared. <a href="' + link2 + '" target="_blank">Open Share Link</a>');
+                                    _control(true, link2);
+                                }
+                                function _control(shared, link2) {
+                                    if (gd_uniqid != uniqid) return;
+                                    end();
+                                    if (gd_resp2.id != gd_resp.id) return;
+                                    _getid("txtshareurl").value = link2 || '';
+                                    if (link2) _getid("txtsharelink").innerHTML = '<a href="' + link2 + '" target="_blank" title="Open this share link">Sharing URL</a>';
+                                    else _getid("txtsharelink").innerHTML = 'Sharing URL';
+                                    _getid("txtshareurl").disabled = !shared;
+                                    _getid("btn_share").disabled = shared;
+                                    _getid("btn_unshare").disabled = !shared;
+                                }
+                                function _touch() {
+                                    var request = gapi.client.drive.files.touch({
+                                        'fileId': fileId
+                                    });
+                                    request.execute(function (resp) {
+                                    });
+                                }
+                                _progress('Changing Permission...');
+
+                                if (gd_resp.userPermission && gd_resp.userPermission.role != 'owner') {
+                                    _progress('You have no permission for this file.');
+                                    end();
+                                    return;
+                                }
+
+                                var request = gapi.client.drive.permissions.list({
+                                    'fileId': fileId
+                                });
+                                request.execute(function (resp) {
+                                    if (gd_uniqid != uniqid) return;
+                                    //console.log(resp.items);
+                                    if (!resp || !resp.items) {
+                                        _progress('Error!! Check the file, folder is valid.');
+                                        end();
+                                        return;
+                                    }
+
+                                    var isexist;
+                                    if (shared) {
+                                        for (var i = 0; i <= resp.items.length - 1; i++) {
+                                            if (resp.items[i].role == 'reader' && resp.items[i].type == 'anyone' && resp.items[i].withLink) { //resp.items[i].id=='anyoneWithLink' 
+                                                isexist = true;
+                                                _shared();
+                                                break;
+                                            }
+                                        }
+
+                                        if (!isexist) {
+                                            var body = {
+                                                'value': '', 'type': 'anyone', 'role': 'reader', 'withLink': true
+                                            };
+                                            var request = gapi.client.drive.permissions.insert({
+                                                'fileId': fileId,
+                                                'resource': body
                                             });
-                                        }, true);
-                                    }
-                                    function attach_refresh() {
-                                        if (!gd_resp) return;
-                                        gd_login(function (result) {
-                                            if (!result) return;
-                                            gd_loadfile(gd_resp.id);
-                                        }, true);
-                                    }
-                                </script>
-                                <style>
-                                    .picker-dialog {
-                                        padding: 0px 0px !important;
-                                    }
-                                </style>
-
-                                <script>
-                                    var gresp;
-                                    function _getfrmdoc(ifrm) {
-                                        return (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
-                                    }
-                                    function proc_gview() {
-                                        if (!gresp) return;
-                                        var a = _getid("gviewer");
-                                        var resp = gresp;
-                                        var s = 'https://drive.google.com/file/d/' + resp.id + '/preview';
-                                        if (resp.alternateLink) {
-                                            var p1 = resp.alternateLink.lastIndexOf("http://atomurl.net/");
-                                            if (p1 >= 0) s = resp.alternateLink.substr(0, p1) + '/preview';
+                                            request.execute(function (resp) {
+                                                if (resp && resp.role == 'reader' && resp.type == 'anyone' && resp.withLink) {
+                                                    _shared();
+                                                    _touch();
+                                                } else {
+                                                    var s = 'Share Failed. ';
+                                                    if (resp && resp.error && resp.error.message) s += resp.error.message;
+                                                    _progress(henc(s), 'error');
+                                                    end();
+                                                }
+                                            });
                                         }
-                                        a.style.display = '';
-                                        var ifrm2 = _getfrmdoc(a);
-                                        ifrm2.location.replace(s);
-                                        gd_btn_login2();
-                                    }
-                                    function proc_rssclose() {
-                                        var a = _getid("gviewer");
-                                        if (a && a.style.display == '') {
-                                            a.style.display = "none";
-                                            _getid("btn_gvclose").style.display = "none";
-                                            try {
-                                                var ifrm2 = _getfrmdoc(a);
-                                                if (ifrm2) ifrm2.location.replace('about:blank');
-                                            } catch (err) { }
+
+                                    } else {
+                                        var oshare;
+                                        for (var i = 0; i <= resp.items.length - 1; i++) {
+                                            //if(resp.items[i].role=='reader' && resp.items[i].type=='anyone' && resp.items[i].withLink){ 
+                                            if (resp.items[i].type == 'anyone') {
+                                                if (resp.items[i].withLink) {
+                                                    isexist = true;
+                                                    var request = gapi.client.drive.permissions['delete']({
+                                                        'fileId': fileId,
+                                                        'permissionId': resp.items[i].id
+                                                    });
+                                                    request.execute(function (resp) {
+                                                        if (resp && resp.error) {
+                                                            var s = 'Error. ';
+                                                            if (resp.error.message) s += resp.error.message;
+                                                            _progress(henc(s), 'error');
+                                                            end();
+                                                        } else {
+                                                            if (oshare) _progress('Unshared. Other share permissions seems to remain.');
+                                                            else _progress('UnShared.');
+                                                            _control(false);
+                                                            _touch();
+                                                        }
+                                                    });
+                                                } else {
+                                                    oshare = true;
+                                                }
+                                            } else if (!(resp.items[i].type == 'user' && resp.items[i].role == 'owner')) {
+                                                oshare = true;
+                                            }
+                                        }
+                                        if (!isexist) {
+                                            if (oshare) _progress('Unshared. Other share permissions seems to remain.');
+                                            else _progress('UnShared.');
+                                            _control(false);
                                         }
                                     }
-                                </script>
-                                <style>
-                                    .shadow {
-                                        border: 0px solid silver;
-                                        -webkit-box-shadow: 0 0 10px #999;
-                                        -moz-box-shadow: 0 0 10px #999;
-                                        box-shadow: 0 0 10px #999;
-                                    }
-                                </style>
-                                <button type="button" id="btn_gvclose"
-                                    style="z-index:10000010;position:absolute;font-size:20px;padding:4px 25px;display:none;white-space:nowrap"><img
-                                        src="../../iblogbox.github.io/js/img/etc/close.png" width=14 align="absmiddle">
-                                    Close</button>
-                                <iframe id="gviewer" src="#"
-                                    style="z-index:10000011;position:absolute;display:none;background-color:white"
-                                    class="shadow" frameborder=0 allowfullscreen="true"></iframe>
 
-                                <script type="text/javascript">
+                                });
+                            }
 
-                                    var _gaq = _gaq || [];
-                                    _gaq.push(['_setAccount', 'UA-12727572-6']);
-                                    _gaq.push(['_trackPageview']);
+                            gapi.client.load('drive', 'v2', function () {
+                                get(0);
+                            });
+                        }
+                        var share2;
+                        function attach_dialog() {
+                            if (!gd_resp) return;
+                            function go() {
+                                if (!share2) {
+                                    var appId = CLIENT_ID.split("-")[0];
+                                    share2 = new gapi.drive.share.ShareClient(appId);
+                                }
+                                share2.setItemIds(gd_resp.id);
+                                share2.showSettingsDialog();
+                            }
+                            gd_login(function (result) {
+                                if (!result) return;
+                                gapi.load('drive-share', function () {
+                                    go();
+                                });
+                            }, true);
+                        }
+                        function attach_refresh() {
+                            if (!gd_resp) return;
+                            gd_login(function (result) {
+                                if (!result) return;
+                                gd_loadfile(gd_resp.id);
+                            }, true);
+                        }
+                    </script>
+                    <style>
+                        .picker-dialog {
+                            padding: 0px 0px !important;
+                        }
+                    </style>
 
-                                    (function () {
-                                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                                    })();
+                    <script>
+                        var gresp;
+                        function _getfrmdoc(ifrm) {
+                            return (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
+                        }
+                        function proc_gview() {
+                            if (!gresp) return;
+                            var a = _getid("gviewer");
+                            var resp = gresp;
+                            var s = 'https://drive.google.com/file/d/' + resp.id + '/preview';
+                            if (resp.alternateLink) {
+                                var p1 = resp.alternateLink.lastIndexOf("http://atomurl.net/");
+                                if (p1 >= 0) s = resp.alternateLink.substr(0, p1) + '/preview';
+                            }
+                            a.style.display = '';
+                            var ifrm2 = _getfrmdoc(a);
+                            ifrm2.location.replace(s);
+                            gd_btn_login2();
+                        }
+                        function proc_rssclose() {
+                            var a = _getid("gviewer");
+                            if (a && a.style.display == '') {
+                                a.style.display = "none";
+                                _getid("btn_gvclose").style.display = "none";
+                                try {
+                                    var ifrm2 = _getfrmdoc(a);
+                                    if (ifrm2) ifrm2.location.replace('about:blank');
+                                } catch (err) { }
+                            }
+                        }
+                    </script>
+                    <style>
+                        .shadow {
+                            border: 0px solid silver;
+                            -webkit-box-shadow: 0 0 10px #999;
+                            -moz-box-shadow: 0 0 10px #999;
+                            box-shadow: 0 0 10px #999;
+                        }
+                    </style>
+                    <button type="button" id="btn_gvclose"
+                        style="z-index:10000010;position:absolute;font-size:20px;padding:4px 25px;display:none;white-space:nowrap"><img
+                            src="../../iblogbox.github.io/js/img/etc/close.png" width=14 align="absmiddle">
+                        Close</button>
+                    <iframe id="gviewer" src="#"
+                        style="z-index:10000011;position:absolute;display:none;background-color:white" class="shadow"
+                        frameborder=0 allowfullscreen="true"></iframe>
 
-                                </script>
+                    <script type="text/javascript">
 
-                                <script src="assets/js/bottom.js" async tos="http://atomurl.net/tos.php?app="
-                                    sitetitle=""></script>
-                        </div>
-                    </div>
+                        var _gaq = _gaq || [];
+                        _gaq.push(['_setAccount', 'UA-12727572-6']);
+                        _gaq.push(['_trackPageview']);
+
+                        (function () {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                        })();
+
+                    </script>
+
+                    <script src="assets/js/bottom.js" async tos="http://atomurl.net/tos.php?app=" sitetitle=""></script>
                 </div>
             </div>
-        </section>
+    </div>
+    </div>
+    </section>
