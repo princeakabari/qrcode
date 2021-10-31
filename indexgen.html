@@ -888,9 +888,8 @@
                                                             </div>
                                                         </form>
 
-                                                        <button onClick="proc_generate(true)"><img
-                                                                src='img/configure.png' align='absbottom'>&nbsp;
-                                                            <font style='font-size:17px'>Make QR Code</font>
+                                                        <button onClick="proc_generate(true)" class="banner-btn pix-btn wow fadeInUp">&nbsp;
+                                                            <font style='font-size:17px' >Make QR Code</font>
                                                         </button>
 
                                                 <tr>
@@ -924,30 +923,7 @@
                                                             </div>
                                                         </div>
 
-                                                <tr>
-                                                    <td>
-                                                        <hr>
-                                                        <a name='decode_section'></a>
-                                                        <table class='table1' cellpadding=0 cellspacing=0>
-                                                            <tr>
-                                                                <td colspan=100>
-                                                                    <font style='color:blue;font-size:17px'><b>QR Code,
-                                                                            Barcode Decoder</b></font>
-                                                            <tr>
-                                                                <td>QR image URL (http or https)&nbsp;&nbsp;
-                                                            <tr>
-                                                                <td><input type=text id='txt_decode_qrimageurl'
-                                                                        class='inputtext' value=''>
-                                                        </table>
-                                                        <button id='btn_decode_qrimage' onClick="proc_decodeqrimage()">
-                                                            <font style='font-size:16px'>Decode</font>
-                                                        </button> <img id='img_decode_wait' style='display:none'
-                                                            src='../img/wait.gif'>
-                                                        <div id='div_decode_qrimageurl' style='display:none'>
-                                                            <textarea id='frame_decode_qrimageurl'
-                                                                class='textareatext'></textarea>
-                                                            <div id='test_decode_qrimage' style="display:none"></div>
-                                                        </div>
+                                                
                                             </table>
 
                                         <td width=10>
@@ -963,13 +939,14 @@
                                             </script>
 
                                             <div id='div_qrcode_download' style='display:none;margin-left:7px'>
-                                                <a id='qrcode_download' href='#' style="color:#00E;">Download this
-                                                    image</a>
-                                                <br>
-                                                <br>
+                                                
+                                                
                                                 <img id='qrcode_img' src='img/blank.png' onerror='proc_imgerror(this)'
                                                     style='display:none'>
-                                                <div id="qrcode_local"></div>
+                                                <div id="qrcode_local"></div><br>
+                                                <br>
+                                                <a id='qrcode_download' href='#' class="banner-btn pix-btn wow fadeInUp" data-wow-delay="0.7s">Download QR Code
+                                                </a>
                                             </div>
 
                                 </table>
@@ -990,114 +967,7 @@
                                         <td>
                                 </table>
 
-                                <table width=740>
-                                    <tr>
-                                        <td>
-                                            <font style='font-size:15px'><b>What is a QR code?</b></font><br>
-                                            A QR code (abbreviated from Quick Response code) is a type of matrix barcode
-                                            (or two-dimensional code)
-                                            first designed for the automotive industry. More recently, the system has
-                                            become popular outside of the
-                                            industry due to its fast readability and comparatively[clarification needed]
-                                            large storage capacity. The
-                                            code consists of black modules arranged in a square pattern on a white
-                                            background. The information
-                                            encoded can be made up of four standardized kinds ("modes") of data
-                                            (numeric, alphanumeric, byte/binary,
-                                            Kanji), or by supported extensions virtually any kind of data.
-                                            Created by Toyota subsidiary Denso Wave in 1994 to track vehicles during the
-                                            manufacturing process, the
-                                            QR code is one of the most popular types of two-dimensional barcodes. It was
-                                            designed to allow its
-                                            contents to be decoded at high speed.
-
-                                            <br><br><b>How to insert the image into a Google document</b><br>
-                                            Copy the generated image to clipboard, and Paste it to Google documents
-                                            (Ctrl+V, Apple Key+V).
-                                </table>
-
-                                <br>
-                                <style>
-                                    .bottomtext {
-                                        font-size: 14px;
-                                        color: blue;
-                                        text-decoration: none;
-                                    }
-
-                                    .bottomtext2 {
-                                        font-size: 15px;
-                                        color: blue;
-                                    }
-
-                                    .bottomtextbig {
-                                        font-size: 17px;
-                                        color: blue;
-                                        text-decoration: none;
-                                    }
-                                </style>
-
-                                <table cellpadding=0>
-                                    <tr>
-                                        <td>
-                                            <table>
-                                                <tr>
-                                                    <td><a href='http://atomurl.net/myip'><img
-                                                                src='../myip/img/logo20.png' border=0></a>
-                                                    <td><a href='http://atomurl.net/myip' class='bottomtext'>What is my
-                                                            IP address?</a>
-                                                    <td width=5>
-                                                    <td><a href='http://atomurl.net/qrcode'><img
-                                                                src='img/logo_small.png' width=20 border=0></a>
-                                                    <td><a href='http://atomurl.net/qrcode' class='bottomtext'>QR Code
-                                                            Generator</a>
-                                                    <td width=5>
-                                                    <td><a href='http://atomurl.net/barcode'><img
-                                                                src='../barcode/img/logo20.png' width=20 border=0></a>
-                                                    <td><a href='http://atomurl.net/barcode' class='bottomtext'>Barcode
-                                                            Generator</a>
-                                                    <td width=5>
-                                                    <td><a href='http://atomurl.net/math'><img
-                                                                src='../math/img/logo20.png' border=0></a>
-                                                    <td><a href='http://atomurl.net/math' class='bottomtext'>TeX
-                                                            equation editor</a>
-                                                    <td width=5>
-                                                    <td><a href='http://atomurl.net/dynamicicon'><img
-                                                                src='../dynamicicon/img/logo20.png' border=0></a>
-                                                    <td><a href='http://atomurl.net/dynamicicon'
-                                                            class='bottomtext'>Dynamic Icons</a>
-                                            </table>
-
-
-                                    <tr>
-                                        <td>
-                                            <table>
-                                                <tr>
-                                                    <td><a href='http://time.appzend.net/' target='_blank'
-                                                            class='bottomtext2'>Date,Time,Weather and
-                                                            News</a>
-                                                    <td width=5>
-                                                    <td><a href='http://radio.appzend.net/' target='_blank'
-                                                            class='bottomtext2'>Radio Live
-                                                            Stations</a>
-                                                    <td width=5>
-                                                    <td><a href='http://worldclock.fullstacks.net/' target='_blank'
-                                                            class='bottomtext2'>World
-                                                            Clock</a>
-                                            </table>
-                                </table>
-                                <br>
-                                <br>
-
-                                <style>
-                                    .gd_div {
-                                        background-color: #FFFFE1;
-                                        position: absolute;
-                                        overflow: hidden;
-                                        -webkit-box-shadow: 0 0 25px #999;
-                                        -moz-box-shadow: 0 0 25px #999;
-                                        box-shadow: 0 0 25px #999
-                                    }
-                                </style>
+                                
                                 <div id="layer_message" class="gd_div" style="z-index:10001;display:none;"></div>
                                 <div id="gd_window" class="gd_div" style="z-index:10000001;display:none;"></div>
                                 <div id="gd_btn_login" class="gd_div" style="z-index:10000000;display:none;">
