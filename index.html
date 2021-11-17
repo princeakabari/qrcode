@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>QR Code Scanner & Generator</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon.png">
+    <link rel="mask-icon" href="assets/img/fav/favicon.png" color="#fa7070">
+
+    <meta name="msapplication-TileColor" content="#fa7070">
+    <meta name="theme-color" content="#fa7070">
+
+    <!-- Dependency Styles -->
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+
+
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&amp;family=Satisfy&amp;display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body id="home-version-6" class="home-version-6" data-style="default">
+
+    <a href="#main_content" data-type="section-switch" class="return-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <div class="page-loader">
+        <div class="loader">
+
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+
+        </div>
+    </div><!-- /.page-loader -->
+
+
+	<div id="main_content">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header class="site-header header-eight header_trans-fixed" data-top="992">
+			<div class="container">
+				<div class="header-inner">
+					<div class="toggle-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<!-- /.toggle-menu -->
+
+					<div class="site-mobile-logo">
+						<a href="index.html" class="logo">
+							<a href="index.html" class="main-logo">QR Code</a>
+						    <a href="index.html" class="sticky-logo">QR Code</a>
+						</a>
+					</div>
+
+					<nav class="site-nav">
+						<div class="close-menu">
+							<span>Close</span>
+							<i class="ei ei-icon_close"></i>
+						</div>
+
+						<div class="site-logo" s>
+							<a href="index.html" class="logo">
+								<a href="index.html" class="main-logo" >QR Code</a>
+								<a href="index.html" class="sticky-logo">QR Code</a>
+							</a>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="menu-wrapper" data-top="992">
+							<ul class="site-main-menu">
+								<li >
+									<a href="index.html">Home</a>
+									
+								</li>
+								<li><a href="/qr-code-scanner.html">QR Code Scanner</a></li>
+								<li><a href="/qr-code-generator.html">QR Code Generator</a></li>								
+								<li><a href="#">How Its Work</a></li>								
+								<li class="menu-item-has-children">
+									<a href="#">Our Tools</a>
+
+									<ul class="sub-menu">
+										<!--<li><a href="about.html">About</a></li>
+										<li><a href="service.html">Service</a></li>
+										<li><a href="team.html">Our Team</a></li>
+										<li><a href="pricing.html">Pricing</a></li>
+										<li class="menu-item-has-children">
+											<a href="portfolio.html">Portfolio</a>
+											<ul class="sub-menu">
+												<li><a href="portfolio-one.html">Style One</a></li>
+												<li><a href="portfolio-two.html">Style Two</a></li>
+												<li><a href="portfolio-three.html">Style Three</a></li>
+												<li><a href="portfolio-single.html">Portfolio Single</a></li>
+											</ul>
+										</li>
+										<li><a href="faq.html">Faq's</a></li>
+										<li><a href="error.html">Error 404</a></li>
+										<li><a href="signin.html">Sing In</a></li>
+										<li><a href="signup.html">Sing Up</a></li>-->
+									</ul>
+								</li>
+
+								
+							</ul>
+						</div>
+						<!-- /.menu-wrapper -->
+
+						
+
+					</nav><!-- /.site-nav -->
+				</div><!-- /.header-inner -->
+			</div><!-- /.container -->
+		</header><!-- /.site-header -->
+
+		
+
+		<!--============================-->
+		<!--=         Feature         =-->
+		<!--============================-->
+		<section class="featured-nine ">
+			<div class="container">
+				<div class="section-title style-five text-center">
+					<h3 class="sub-title wow pixFadeUp"></h3><br>
+					<h2 class="title wow pixFadeUp" data-wow-delay="0.2s">
+						QR Code Scanner & Generator
+					</h2>
+				</div><!-- /.section-title -->
+
+				<div class="row">
+					<div class=" col-md-6">
+						<div class="saaspik-icon-box-wrapper style-ten wow pixFadeUp" data-wow-delay="0.3s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/61.png" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<h3 class="pixsass-icon-box-title"><a href="#">QR Code Scanner</a></h3>
+								<p>
+									
+								</p>
+
+								<a href="/qr-code-scanner.html" class="banner-btn pix-btn wow fadeInUp">Scan</a>
+							</div>
+						</div><!-- /.pixsass-box style-ten wow fadeInRight -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					<div class=" col-md-6">
+						<div class="saaspik-icon-box-wrapper style-ten wow pixFadeUp" data-wow-delay="0.5s">
+							<div class="saaspik-icon-box-icon">
+								<img src="media/feature/62.png" alt="">
+							</div>
+							<div class="pixsass-icon-box-content">
+								<h3 class="pixsass-icon-box-title"><a href="#">QR Code Generator</a></h3>
+
+								<p>
+								
+								</p>
+
+								<a href="/qr-code-generator.html" class="banner-btn pix-btn wow fadeInUp" >Generator</a>
+							</div>
+						</div><!-- /.pixsass-box style-ten wow fadeInRight -->
+					</div><!-- /.col-lg-4 col-md-6 -->
+
+					
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.featured -->
+
+		
+
+	<!--=============================-->
+        <!--=         About Two         =-->
+        <!--=============================-->
+        <section class="about-two" id="howtoscan">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-thumb wow pixFadeRight" data-wow-delay="0.6s">
+                            <img src="media/about/2n.png" alt="about">
+                        </div>
+                        <!-- /.about-thumb -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="about-content-two">
+                            <div class="section-title">
+                                <h2 class="title wow pixFadeUp" data-wow-delay="0.3s">
+                                    How to scan a QR Code <br> from a picture.
+                                </h2>
+                            </div>
+                            <!-- /.section-title -->
+
+                            <p class="description wow pixFadeUp" data-wow-delay="0.5s">
+                                1. First, you have to authorize our QR Code reader online to use your camera. <br>
+2. If the camera not opened go to the browser setting and allow the camera on this website <br>
+3. Then you will see the video <br>
+4. Point the QR Code on the video center <br>
+5. If it doesn't detect your code, move back and forth slightly <br>
+6. After successfully scanning, the result will be displayed on the screen. <br>
+                            </p>
+
+
+                            <!-- /.singiture -->
+                        </div>
+                        <!-- /.about-content -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+		<!--============================-->
+		<!--=         Download         =-->
+		<!--============================-->
+		
+		<!-- /.download -->
+
+		<section class="faqs">
+
+
+
+
+            <h1 style="text-align: center;">Have more questions?</h1><br>
+            <div class="container">
+                <div class="tabs-wrapper">
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="design" role="tabpanel" aria-labelledby="design-tab">
+                            <div id="accordionsing" class="faq faq-two pixFade">
+                                <div class="card">
+                                    <div class="card-header" id="heading10">
+                                        <h5>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse00" aria-expanded="false"
+                                                aria-controls="collapse00">
+                                                What is a QR Code?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse00" class="collapse" aria-labelledby="heading10"
+                                        data-parent="#accordionsing">
+                                        <div class="card-body">
+                                            <p>
+                                                QR stands for “Quick Response”. QR Codes are intended to present data to any scanning device as fast as possible. They were invented by Denso Wave in 1994 for Toyota. Learn more at Wikipedia. <br>
+
+                                                QR isn't the only type of barcode - but it is the one you should be using to get more leads and clients. There are other types of Barcodes, such as ScanLife, EZcode, DataMatrix, and Microsoft Tag.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card active">
+                                    <div class="card-header" id="heading20">
+                                        <h5>
+                                            <button class="btn btn-link" data-toggle="collapse"
+                                                data-target="#collapse10" aria-expanded="true"
+                                                aria-controls="collapse10">
+                                                How to Scan a QR Code?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse10" class="collapse show" aria-labelledby="heading20"
+                                        data-parent="#accordionsing">
+                                        <div class="card-body">
+                                            <p>
+                                                Most common way to interact with a QR Code is via a smartphone camera. <br>
+
+                                                Some smartphones have a built-in app for scanning QR Codes, other require a special App to be installed. You can use our Online QR Code Scanner app.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading30">
+                                        <h5>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse20" aria-expanded="false"
+                                                aria-controls="collapse20">
+                                                Why do I need a QR code?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse20" class="collapse" aria-labelledby="heading30"
+                                        data-parent="#accordionsing">
+                                        <div class="card-body">
+                                            <p>
+                                                It is a great tool for marketing and sharing information. QR codes can help you convert physical leads to online customers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading40">
+                                        <h5>
+                                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse30" aria-expanded="false"
+                                                aria-controls="collapse30">
+                                                Are QR Codes free?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse30" class="collapse" aria-labelledby="heading40"
+                                        data-parent="#accordionsing">
+                                        <div class="card-body">
+                                            <p>
+                                                Yes - QR Codes are completely free to use, create, and publish. Take a look at our free tools.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.faq-section -->
+		<section class="download-two">
+			<div class="container-wrap bg-color-two">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-7">
+							<div class="download-feature-image-two">
+								<img src="media/download/3.png" alt="" class="image-one wow pixFadeRight">
+								<img src="media/download/4.png" alt="" class="image-two wow pixFadeLeft">
+
+							</div>
+							<!-- /.download-feature-image -->
+						</div>
+						<!-- /.col-lg-7 -->
+
+						<div class="col-lg-5 pix-order-one">
+							<div class="download-wrapper-two">
+								<h2 class="title wow pixFadeUp">QR Code<br>App</h2>
+
+								<p class="wow pixFadeUp" data-wow-delay="0.3s">
+									App available for iOS & android
+								</p>
+
+								<div class="app-btn-wrapper">
+									<a href="#" class="app-btn-two wow flipInX" data-wow-delay="0.5s">
+										<i class="fi flaticon-google-play"></i>
+										<span class="btn-text">
+											<span class="text-top">Download Now</span>
+											<span>Google play</span>
+										</span>
+									</a>
+
+								</div>
+								<!-- /.app-btn-wrapper -->
+							</div>
+							<!-- /.download-wrapper -->
+						</div>
+						<!-- /.col-lg-5 -->
+
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+
+				
+			</div>
+			<!-- /.container-wrap -->
+		</section>
+
+		
+
+		<!--=========================-->
+		<!--=        Footer         =-->
+		<!--=========================-->
+		<footer id="footer" class="footer-app">
+			<div class="container-wrap bg-footer-color">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="row wow fadeInUp">
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<div class="widget footer-widget widget-about">
+									<h3 href="#" class="widget-title">Frontendtrick.com</h3>
+									<p>
+										Tosser amongst jolly good do one no biggie hunky.
+									</p>
+
+									<h4 class="footer-title">Social</h4>
+									<ul class="social-share-link">
+										<li><a href="#" class="share_facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#" class="share_twitter"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#" class="share_pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+										<li><a href="#" class="share_linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+									</ul>
+
+
+								</div>
+								<!-- /.widget footer-widget -->
+							</div>
+							<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<div class="widget footer-widget widget-contact">
+									<h3 class="widget-title">About Us</h3>
+
+									<ul class="widget-contact-info">
+										<li><i class="ei ei-icon_pin_alt"></i>426 Maryam Springs Suite 230 New York, USA</li>
+										<li><i class="ei ei-icon_phone"></i>+(623) 698 235 426</li>
+									</ul>
+
+
+								</div>
+								<!-- /.widget footer-widget -->
+							</div>
+							<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+							<div class="col-lg-2 col-md-6 col-sm-6">
+								<div class="widget footer-widget">
+									<h3 class="widget-title">Pages</h3>
+									<ul class="footer-menu">
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Terms of Service</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+
+									</ul>
+								</div>
+								<!-- /.widget footer-widget -->
+							</div>
+							<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+
+							<div class="col-lg-2 col-md-6 col-sm-6">
+								<div class="widget footer-widget">
+									<h3 class="widget-title">Our Tools</h3>
+
+									<ul class="footer-menu">
+										<li><a href="#">About</a></li>
+										<li><a href="#">Legal Notice</a></li>
+										<li><a href="#">Pricing</a></li>
+										<li><a href="#">Enterprise</a></li>
+										<li><a href="#">User Journey</a></li>
+									</ul>
+								</div>
+								<!-- /.widget footer-widget -->
+							</div>
+							<!-- /.col-lg-3 col-md-6 col-sm-6 -->
+						</div>
+						<!-- /.row -->
+
+					</div><!-- /.footer-inner -->
+
+					<div class="site-info">
+						<div class="copyright text-center">
+							<p>© 2021 All Rights Reserved Design by <a href="https://www.frontendtrick.com/" target="_blank">Frontendtrick</a>
+							</p>
+						</div>
+					</div>
+				</div><!-- /.container -->
+
+
+			</div>
+			<!-- /.container-wrap -->
+		</footer><!-- /#footer -->
+
+
+	</div><!-- /#site -->
+
+	<!-- Dependency Scripts -->
+	<script src="dependencies/jquery/jquery.min.js"></script>
+	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="dependencies/swiper/js/swiper.min.js"></script>
+	<script src="dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="dependencies/wow/js/wow.min.js"></script>
+	<script src="dependencies/countUp.js/countUp.min.js"></script>
+	<script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+	<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="dependencies/gmap3/js/gmap3.min.js"></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&amp;ver=2.1.6'></script>
+
+
+	<!-- Site Scripts -->
+	<script src="assets/js/header.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>
